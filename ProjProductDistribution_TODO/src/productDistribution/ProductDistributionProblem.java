@@ -20,9 +20,21 @@ public class ProductDistributionProblem implements Problem<ProductDistributionIn
     }
 
     @Override
-    public ProductDistributionIndividual getNewIndividual() {
+    public ProductDistributionIndividual getNewIndividual() { // Individuo é uma possivel soluçao para o problema
         //TODO
-        throw new UnsupportedOperationException("Not implemented yet.");
+        int totalBoxOrders=0; // Total of boxes from ALL Orders
+        for (int i = 0; i < orders.size(); i++) {
+           double distance = warehousePosition.distance(orders.get(i).getPosition());
+           totalBoxOrders += orders.get(i).getBoxes();
+           if(totalBoxOrders <= getTrucksMaxBoxes()) {}
+
+
+                   //return new ProductDistributionIndividual(this,orders.size());
+
+
+
+        }
+        //return new ProductDistributionIndividual();
     }
 
     @Override
@@ -67,7 +79,7 @@ public class ProductDistributionProblem implements Problem<ProductDistributionIn
         return trucksMaxBoxes;
     }
 
-    public ArrayList<Order> getItems() {
+    public ArrayList<Order> getOrders() {
         return orders;
     }
 

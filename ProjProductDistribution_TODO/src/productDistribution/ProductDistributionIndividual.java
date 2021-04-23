@@ -11,18 +11,21 @@ public class ProductDistributionIndividual extends IntVectorIndividual<ProductDi
     public ProductDistributionIndividual(ProductDistributionProblem problem, int size) {
         super(problem, size);
         //TODO
+
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
     public ProductDistributionIndividual(ProductDistributionIndividual original) {
         super(original);
         //TODO
+
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
 
     public ArrayList<ArrayList<Integer>> getOrdersForTruck() {
         //TODO
+
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
