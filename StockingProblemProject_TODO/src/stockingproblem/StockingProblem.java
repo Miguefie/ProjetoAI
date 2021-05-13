@@ -1,5 +1,6 @@
 package stockingproblem;
 
+import algorithms.IntVectorIndividual;
 import algorithms.Problem;
 
 import java.io.File;
@@ -8,8 +9,7 @@ import java.util.ArrayList;
 
 public class StockingProblem implements Problem<StockingProblemIndividual> {
     private int materialHeight;
-    private ArrayList<Item> items;
-    private Item material;
+    private ArrayList<Item> items; //Genotipo Conjunto de Items (genomas)
     //TODO this class might require the definition of additional methods and/or attributes
 
     public StockingProblem(int materialHeight, ArrayList<Item> items) {
@@ -21,13 +21,8 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
     @Override
     public StockingProblemIndividual getNewIndividual() {
         //TODO
-        for (int i = 0; i < getMaterialHeight(); i++) { // Linhas Do Material
-            for (int j = 0; j < getItems().size(); j++) { // Colunas do Material (Vai ser o numero de Pecas)
-                material = new Item(j,new int [getMaterialHeight()][getItems().size()]);
 
-            }
-        }
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return new StockingProblemIndividual(this,getItems().size());
     }
 
     public int getMaterialHeight() {
