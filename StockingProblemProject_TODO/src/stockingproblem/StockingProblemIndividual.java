@@ -9,7 +9,8 @@ import java.util.Random;
 
 public class StockingProblemIndividual extends IntVectorIndividual<StockingProblem, StockingProblemIndividual> {
     //TODO this class might require the definition of additional methods and/or attributes
-    private char[][] material; // Fenotipo
+    private int[][] material; // Fenotipo
+    private int materialLength; // Comprimento Total
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -17,6 +18,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         List<Integer> itemList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             itemList.add(i);
+            materialLength += problem.getItems().get(i).getColumns();
         }
         Random rn = new Random();
         //int randomItem = rn.nextInt(size+1); // Random do Item para adicionar no Genome (evitar o Valor 0)
@@ -29,21 +31,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             itemList.remove(itemList.get(this.genome[i]));
         }
 
-        /*for (int i = 0; i < problem.getMaterialHeight(); i++) {  // Linhas Do Material
-            for (int j = 0; j < problem.getItems().size(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                for (int k = 0; k < this.genome.length; k++) {
-                    material[i][j] = this.genome[k]; // Adiciona ao Fenotipo
-                }
-            }
-        }
-
-        int comprimentoTotal = 0;
-        for (int i = 0; i < getItems().size(); i++) {
-            comprimentoTotal += getItems().get(i).getColumns();
-        }
-         material = new char [problem.getMaterialHeight()][size]; // Linhas -> Altura do Material / Colunas -> Comprimento das peças
-         */ //Comprimento Total Material
-
     }
 
     public StockingProblemIndividual(StockingProblemIndividual original) {
@@ -55,7 +42,17 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     @Override
     public double computeFitness() {
         //TODO
-        throw new UnsupportedOperationException("Not implemented yet.");
+        for (int k = 0; k < genome.length; k++) {
+            Item itemAtual = problem.getItems().get(k);
+            for (int i = 0; i < problem.getMaterialHeight(); i++) {  // Linhas Do Material
+                for (int j = 0; j < materialLength; j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
+                    if(checkValidPlacement(itemAtual,material,i,j))
+                        material[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                }
+            }
+        }
+
+        return
     }
 
     private boolean checkValidPlacement(Item item, int[][] material, int lineIndex, int columnIndex) {
