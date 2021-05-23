@@ -10,25 +10,35 @@ import java.util.ArrayList;
 public class StockingProblem implements Problem<StockingProblemIndividual> {
     private int materialHeight;
     private ArrayList<Item> items; //Genotipo Conjunto de Items (genomas)
+
     //TODO this class might require the definition of additional methods and/or attributes
+    private int materialLength; // Comprimento Máximo
 
     public StockingProblem(int materialHeight, ArrayList<Item> items) {
         this.materialHeight = materialHeight;
         this.items = items;
+
         //TODO this construtor might require additional code
+        for (int i = 0; i < items.size(); i++) {
+            materialLength += getItems().get(i).getColumns();
+        }
     }
 
     @Override
     public StockingProblemIndividual getNewIndividual() {
-        //TODO
 
-        return new StockingProblemIndividual(this,getItems().size());
+        //TODO
+        return new StockingProblemIndividual(this, items.size());
     }
 
     public int getMaterialHeight() {
         return materialHeight;
     }
 
+    //TODO
+    public int getMaterialLength() {
+        return materialLength;
+    }
     public ArrayList<Item> getItems() {
         return items;
     }
