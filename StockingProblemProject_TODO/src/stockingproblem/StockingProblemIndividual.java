@@ -12,8 +12,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     //TODO this class might require the definition of additional methods and/or attributes
     private int[][] material; // Fenotipo
 
-    /*private int materialLength;*/ // Comprimento Total
-
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
 
@@ -21,23 +19,15 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         List<Integer> itemList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             itemList.add(i);
-            /*materialLength += problem.getItems().get(i).getColumns();*/
         }
 
-        /*
-        Random rn = new Random();
-        //int randomItem = rn.nextInt(size+1); // Random do Item para adicionar no Genome (evitar o Valor 0)
+        Random rn = GeneticAlgorithm.random;
         Integer itemAleatorio = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
-         */
-
-        Integer itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size())); // Random (1...N)
-
         this.genome[0] = itemAleatorio.intValue(); 
         itemList.remove(itemAleatorio);
 
         for (int i = 1; i < this.genome.length; i++) {
-            /*itemAleatorio = itemList.get(rn.nextInt(itemList.size()));*/
-            itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size()));
+            itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
             this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
             itemList.remove(itemAleatorio);
         }
