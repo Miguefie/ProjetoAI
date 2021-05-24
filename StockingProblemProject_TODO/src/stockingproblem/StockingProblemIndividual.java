@@ -1,6 +1,7 @@
 package stockingproblem;
 
 import algorithms.IntVectorIndividual;
+import ga.GeneticAlgorithm;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,40 +10,27 @@ import java.util.Random;
 
 public class StockingProblemIndividual extends IntVectorIndividual<StockingProblem, StockingProblemIndividual> {
     //TODO this class might require the definition of additional methods and/or attributes
-    private char[][] material; // Fenotipo
+    private int[][] material; // Fenotipo
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
+
         //TODO
         List<Integer> itemList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             itemList.add(i);
         }
-        Random rn = new Random();
-        //int randomItem = rn.nextInt(size+1); // Random do Item para adicionar no Genome (evitar o Valor 0)
-        this.genome[0] = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
-        System.out.println(itemList.get(this.genome[0]));
-        itemList.remove(itemList.get(this.genome[0]));
+
+        Random rn = GeneticAlgorithm.random;
+        Integer itemAleatorio = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
+        this.genome[0] = itemAleatorio.intValue(); 
+        itemList.remove(itemAleatorio);
+
         for (int i = 1; i < this.genome.length; i++) {
-            int itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
-            this.genome[i] = itemAleatorio; // Adiciona o Item aleatorio ao Genotipo
-            itemList.remove(itemList.get(this.genome[i]));
+            itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
+            this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
+            itemList.remove(itemAleatorio);
         }
-
-        /*for (int i = 0; i < problem.getMaterialHeight(); i++) {  // Linhas Do Material
-            for (int j = 0; j < problem.getItems().size(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                for (int k = 0; k < this.genome.length; k++) {
-                    material[i][j] = this.genome[k]; // Adiciona ao Fenotipo
-                }
-            }
-        }
-
-        int comprimentoTotal = 0;
-        for (int i = 0; i < getItems().size(); i++) {
-            comprimentoTotal += getItems().get(i).getColumns();
-        }
-         material = new char [problem.getMaterialHeight()][size]; // Linhas -> Altura do Material / Colunas -> Comprimento das peças
-         */ //Comprimento Total Material
 
     }
 
@@ -55,7 +43,19 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     @Override
     public double computeFitness() {
         //TODO
-        throw new UnsupportedOperationException("Not implemented yet.");
+        double cuts = 0;
+        for (int k = 0; k < genome.length; k++) {
+            Item itemAtual = problem.getItems().get(k);
+            for (int i = 0; i < problem.getMaterialHeight(); i++) {  // Linhas Do Material
+                for (int j = 0; j < problem.getMaterialLength(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
+                    if(checkValidPlacement(itemAtual,material,i,j))
+                        cuts++;
+                        material[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                }
+            }
+        }
+
+        return cuts;
     }
 
     private boolean checkValidPlacement(Item item, int[][] material, int lineIndex, int columnIndex) {
