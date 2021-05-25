@@ -21,6 +21,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             itemList.add(i);
         }
 
+        /*
         Random rn = GeneticAlgorithm.random;
         Integer itemAleatorio = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
         this.genome[0] = itemAleatorio.intValue(); 
@@ -31,13 +32,37 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
             itemList.remove(itemAleatorio);
         }
+         */
 
+        Integer itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size())); // Random (1...N)
+
+        this.genome[0] = itemAleatorio.intValue();
+        itemList.remove(itemAleatorio);
+
+        for (int i = 0; i < this.genome.length; i++) {
+            itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size()));
+            this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
+            itemList.remove(itemAleatorio);
+        }
+
+        System.out.println(Arrays.toString(genome)); //para testar Output
     }
 
+    /*
     public StockingProblemIndividual(StockingProblemIndividual original) {
         super(original);
         //TODO
         throw new UnsupportedOperationException("Not implemented yet.");
+    }
+     */
+
+    //Este construtor é chamado quando se faz um clone dum individuo !!!
+    /*Sempre que criamos uma variavel temos que a declarar aqui. Se ñ, por exemplo, ela aparece a 0 no toString*/
+    public StockingProblemIndividual(StockingProblemIndividual original) {
+        super(original);
+
+        //TODO
+        this.material = original.material;
     }
 
     @Override

@@ -39,6 +39,7 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
     public int getMaterialLength() {
         return materialLength;
     }
+
     public ArrayList<Item> getItems() {
         return items;
     }
