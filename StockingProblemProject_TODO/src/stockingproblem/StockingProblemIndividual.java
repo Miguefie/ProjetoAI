@@ -4,13 +4,12 @@ import algorithms.IntVectorIndividual;
 import ga.GeneticAlgorithm;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 public class StockingProblemIndividual extends IntVectorIndividual<StockingProblem, StockingProblemIndividual> {
     //TODO this class might require the definition of additional methods and/or attributes
-    private int[][] material; // Fenotipo
+
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -46,15 +45,17 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         double cuts = 0;
         for (int k = 0; k < genome.length; k++) {
             Item itemAtual = problem.getItems().get(k);
-            for (int i = 0; i < problem.getMaterialHeight(); i++) {  // Linhas Do Material
-                for (int j = 0; j < problem.getMaterialLength(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                    if(checkValidPlacement(itemAtual,material,i,j))
+            for (int i = 0; i < problem.getMaterialLength(); i++) {  // Linhas Do Material
+                for (int j = 0; j < problem.getMaterialHeight(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
+                    if(checkValidPlacement(itemAtual, problem.getMaterial(),i,j))
+                    {
                         cuts++;
-                        material[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                        problem.getMaterial()[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                    }
                 }
+                if(itemAtual.getMatrix().length < problem.getMaterialLength() - itemAtual.getMatrix().length)
             }
         }
-
         return cuts;
     }
 
