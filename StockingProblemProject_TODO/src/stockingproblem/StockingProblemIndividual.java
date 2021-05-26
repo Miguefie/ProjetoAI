@@ -43,17 +43,22 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     public double computeFitness() {
         //TODO
         double cuts = 0;
+        int columnIndex=0;
         for (int k = 0; k < genome.length; k++) {
             Item itemAtual = problem.getItems().get(k);
-            for (int i = 0; i < problem.getMaterialLength(); i++) {  // Linhas Do Material
-                for (int j = 0; j < problem.getMaterialHeight(); j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                    if(checkValidPlacement(itemAtual, problem.getMaterial(),i,j))
-                    {
+            for (int i = 0; i < problem.getMaterialLength(); i++) { // Linhas Do Material
+                for (int j = columnIndex; j < itemAtual.getColumns() + columnIndex; j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
+                    if (checkValidPlacement(itemAtual, problem.getMaterial(), i, j)) {
                         cuts++;
                         problem.getMaterial()[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
                     }
                 }
-                if(itemAtual.getMatrix().length < problem.getMaterialLength() - itemAtual.getMatrix().length)
+                columnIndex=0;
+                if(itemAtual.getLines()<=i) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item
+                {
+                    columnIndex = itemAtual.getColumns();
+                    break;
+                }
             }
         }
         return cuts;
