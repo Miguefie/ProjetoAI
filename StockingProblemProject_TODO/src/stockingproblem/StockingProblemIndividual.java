@@ -4,6 +4,7 @@ import algorithms.IntVectorIndividual;
 import ga.GeneticAlgorithm;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -28,12 +29,16 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         this.genome[0] = itemAleatorio.intValue();
         itemList.remove(itemAleatorio);
 
-        for (int i = 1; i < this.genome.length; i++) {
-            itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
-            this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
-            itemList.remove(itemAleatorio);
+        for (int i = 0; i < this.genome.length; i++) {
+            if(!itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
+
+                itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size()));
+                this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
+                itemList.remove(itemAleatorio);
+            }
         }
 
+        //System.out.println(Arrays.toString(genome));
     }
 
     public StockingProblemIndividual(StockingProblemIndividual original) {
@@ -90,7 +95,19 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             }
         }
 
-        fitness = nCuts*0.3 + tamMaxPec*0.7; //nCuts e tamMaxPec não podem ter o mesmo peso
+        System.out.println("\n");
+        System.out.println("nCuts1 " + nCuts);
+        System.out.println("tamMaxPec1 " + tamMaxPec);
+
+        //nCuts e tamMaxPec não podem ter o mesmo peso:
+        nCuts = nCuts*0.3;
+        tamMaxPec = tamMaxPec*0.7;
+
+        fitness = nCuts + tamMaxPec;
+
+        System.out.println("nCuts2 " + nCuts);
+        System.out.println("tamMaxPec2 " + tamMaxPec);
+        System.out.println("fitness " + fitness);
 
         return fitness;
     }
