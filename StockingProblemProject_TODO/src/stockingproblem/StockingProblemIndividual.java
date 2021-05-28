@@ -56,8 +56,11 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         material = new int[problem.getMaterialHeight()][problem.getMaterialLength()];
         nCuts = 0;
         tamMaxPec = 0;
+
         boolean adicionado = false;
         double tamPec = 0;
+        double nCutsPeso = 0;
+        double tamMaxPecPeso = 0;
 
         for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para ver em q parte da matrix encaixa peça
 
@@ -100,10 +103,10 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         System.out.println("tamMaxPec1 " + tamMaxPec);
 
         //nCuts e tamMaxPec não podem ter o mesmo peso:
-        nCuts = nCuts*0.3;
-        tamMaxPec = tamMaxPec*0.7;
+        nCutsPeso = nCuts*0.3;
+        tamMaxPecPeso = tamMaxPec*0.7;
 
-        fitness = nCuts + tamMaxPec;
+        fitness = nCutsPeso + tamMaxPecPeso;
 
         System.out.println("nCuts2 " + nCuts);
         System.out.println("tamMaxPec2 " + tamMaxPec);
@@ -147,6 +150,15 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         sb.append("fitness: ");
         sb.append(fitness);
         //TODO
+/*        sb.append("\nWeight: " + weight + " (limit: " + problem.getMaximumWeight() + ")");
+        sb.append("\nValue: " + value);
+        sb.append("\nfitness: " + fitness);
+        sb.append("\nItems: ");
+        for (int i = 0; i < genome.length; i++) {
+            if (genome[i]) {
+                sb.append(problem.getItem(i));
+            }
+        }*/
         return sb.toString();
     }
 
