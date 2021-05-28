@@ -11,7 +11,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     //TODO this class might require the definition of additional methods and/or attributes
     private int[][] material; // Fenotipo
     private double nCuts;
-    private double tamMaxPec;
+    private double tamMaxPec; //quantas colunas gastei para colucar material?
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -52,18 +52,33 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         nCuts = 0;
         tamMaxPec = 0;
         boolean adicionado = false;
+        double tamPec = 0;
 
         for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para ver em q parte da matrix encaixa peça
+
             for (int j = 0; j < problem.getMaterialLength() - 1; j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
                 for (int i = j; i < problem.getMaterialHeight() - 1; i++) { //3º percorre linhas
+
+                    /*se posições forem diferentes houve corte*/
+                    if (material[i][j] != material[i][j+1]){ //cortes na horizontal
+                        nCuts++;
+                    }
+                    if (material[i][j] != material[i+1][j]){ //cortes na vertical
+                        nCuts++;
+                    }
 
                     Item itemAtual = problem.getItems().get(genome[k]); //onde está o item
 
                     if (checkValidPlacement(itemAtual, material, i, j)){
 
-                        placement(itemAtual, material, nCuts, tamMaxPec); //método aux para add item e calcular fitness
+                        placement(itemAtual, material); //método aux para add item
 
                         adicionado = true;
+
+                        tamPec = itemAtual.getColumns();
+                        if (tamPec > tamMaxPec){ //se tamanho for maior substituir
+                            tamMaxPec = tamPec;
+                        }
 
                         break; //como já add peça à matrix temos de sair dos 'for' que percorrem a matrix
                     }
@@ -74,16 +89,20 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                 }
             }
         }
+
+        fitness = nCuts*0.3 + tamMaxPec*0.7; //nCuts e tamMaxPec não podem ter o mesmo peso
+
+        return fitness;
     }
 
     //TODO
-    private void placement(Item item, int[][] material, double nCuts, double tamMaxPec) {
+    private void placement(Item item, int[][] material) {
         int[][] itemMatrix = item.getMatrix();
         for (int i = 0; i < itemMatrix.length; i++) {
             for (int j = 0; j < itemMatrix[i].length; j++) {
                 if (itemMatrix[i][j] != 0) {
 
-                    material[i][j] = item.getRepresentation(); //colocar peça
+                    material[i][j] = item.getRepresentation(); //Colocar peça!!!
                 }
             }
         }
