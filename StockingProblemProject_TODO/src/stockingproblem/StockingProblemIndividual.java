@@ -13,6 +13,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private int[][] material; // Fenotipo
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
+    private char materialChar; //para mostrar no toString
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -48,6 +49,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         this.material = original.material;
         this.nCuts = original.nCuts;
         this.tamMaxPec = original.tamMaxPec;
+        this.materialChar = original.materialChar;
     }
 
     @Override
@@ -108,8 +110,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
         fitness = nCutsPeso + tamMaxPecPeso;
 
-        System.out.println("nCuts2 " + nCuts);
-        System.out.println("tamMaxPec2 " + tamMaxPec);
+        System.out.println("nCuts2 " + nCutsPeso);
+        System.out.println("tamMaxPec2 " + tamMaxPecPeso);
         System.out.println("fitness " + fitness);
 
         return fitness;
@@ -147,18 +149,22 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("fitness: ");
-        sb.append(fitness);
+
         //TODO
-/*        sb.append("\nWeight: " + weight + " (limit: " + problem.getMaximumWeight() + ")");
-        sb.append("\nValue: " + value);
-        sb.append("\nfitness: " + fitness);
-        sb.append("\nItems: ");
+        sb.append("\n\nNºCortes: " + nCuts);
+        sb.append("\n\nTamanhoMaxPeça: " + tamMaxPec);
+
+        sb.append("\n\nFitness: ");
+        sb.append(fitness);
+
+        sb.append("\n\nGenoma: " + Arrays.toString(genome));
+
+        sb.append("\n\nMatriz: ");
         for (int i = 0; i < genome.length; i++) {
-            if (genome[i]) {
-                sb.append(problem.getItem(i));
-            }
-        }*/
+            materialChar = problem.getItems().get(genome[i]).getRepresentation();
+            sb.append(materialChar + ", ");
+        }
+
         return sb.toString();
     }
 
