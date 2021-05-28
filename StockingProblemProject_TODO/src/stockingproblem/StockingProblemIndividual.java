@@ -25,12 +25,13 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         }
 
         Random rn = GeneticAlgorithm.random;
-        Integer itemAleatorio = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
+        Integer itemAleatorio; // Random (1...N)
 
-        this.genome[0] = itemAleatorio.intValue();
-        itemList.remove(itemAleatorio);
+//        this.genome[0] = itemAleatorio.intValue();
+//        itemList.remove(itemAleatorio);
 
         for (int i = 0; i < this.genome.length; i++) {
+
             if(!itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
 
                 itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
@@ -38,6 +39,22 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                 itemList.remove(itemAleatorio);
             }
         }
+
+/*        for (int i = 1; i < this.genome.length; i++) {
+            itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
+            this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
+            itemList.remove(itemAleatorio);
+        }*/
+
+/*        for (int i = 0; i < this.genome.length; i++) {
+
+            if(itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
+                continue;
+            }
+            itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
+            this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
+            itemList.remove(itemAleatorio);
+        }*/
 
         //System.out.println(Arrays.toString(genome));
     }
