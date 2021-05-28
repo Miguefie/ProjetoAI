@@ -8,12 +8,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class StockingProblem implements Problem<StockingProblemIndividual> {
-    private int[][] material; // Fenotipo
+
     private int materialHeight; //Altura
-    private int materialLength; // Comprimento Máximo
     private ArrayList<Item> items; //Genotipo Conjunto de Items (genomas)
 
     //TODO this class might require the definition of additional methods and/or attributes
+    private int materialLength; // Comprimento Máximo
 
     public StockingProblem(int materialHeight, ArrayList<Item> items) {
         this.materialHeight = materialHeight;
@@ -24,7 +24,6 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
             materialLength += getItems().get(i).getColumns();
         }
 
-        material = new int[materialLength][materialHeight];
     }
 
     @Override
@@ -42,6 +41,7 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
     public int getMaterialLength() {
         return materialLength;
     }
+
     public ArrayList<Item> getItems() {
         return items;
     }
@@ -59,10 +59,6 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
                     .append(item);
         }
         return sb.toString();
-    }
-
-    public int[][] getMaterial() {
-        return material;
     }
 
     public static StockingProblem buildWarehouse(File file) throws IOException {

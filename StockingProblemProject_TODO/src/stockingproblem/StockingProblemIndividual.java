@@ -9,7 +9,9 @@ import java.util.Random;
 
 public class StockingProblemIndividual extends IntVectorIndividual<StockingProblem, StockingProblemIndividual> {
     //TODO this class might require the definition of additional methods and/or attributes
-
+    private int[][] material; // Fenotipo
+    private double nCuts;
+    private double tamMaxPec;
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -22,7 +24,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
         Random rn = GeneticAlgorithm.random;
         Integer itemAleatorio = itemList.get(rn.nextInt(itemList.size())); // Random (1...N)
-        this.genome[0] = itemAleatorio.intValue(); 
+
+        this.genome[0] = itemAleatorio.intValue();
         itemList.remove(itemAleatorio);
 
         for (int i = 1; i < this.genome.length; i++) {
@@ -35,33 +38,55 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
     public StockingProblemIndividual(StockingProblemIndividual original) {
         super(original);
+
         //TODO
-        throw new UnsupportedOperationException("Not implemented yet.");
+        this.material = original.material;
+        this.nCuts = original.nCuts;
+        this.tamMaxPec = original.tamMaxPec;
     }
 
     @Override
     public double computeFitness() {
         //TODO
-        double cuts = 0;
-        int columnIndex=0;
-        for (int k = 0; k < genome.length; k++) {
-            Item itemAtual = problem.getItems().get(k);
-            for (int i = 0; i < problem.getMaterialLength(); i++) { // Linhas Do Material
-                for (int j = columnIndex; j < itemAtual.getColumns() + columnIndex; j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                    if (checkValidPlacement(itemAtual, problem.getMaterial(), i, j)) {
-                        cuts++;
-                        problem.getMaterial()[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+        material = new int[problem.getMaterialHeight()][problem.getMaterialLength()];
+        nCuts = 0;
+        tamMaxPec = 0;
+        boolean adicionado = false;
+
+        for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para ver em q parte da matrix encaixa peça
+            for (int j = 0; j < problem.getMaterialLength() - 1; j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
+                for (int i = j; i < problem.getMaterialHeight() - 1; i++) { //3º percorre linhas
+
+                    Item itemAtual = problem.getItems().get(genome[k]); //onde está o item
+
+                    if (checkValidPlacement(itemAtual, material, i, j)){
+
+                        placement(itemAtual, material, nCuts, tamMaxPec); //método aux para add item e calcular fitness
+
+                        adicionado = true;
+
+                        break; //como já add peça à matrix temos de sair dos 'for' que percorrem a matrix
                     }
                 }
-                columnIndex=0;
-                if(itemAtual.getLines()<=i) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item
-                {
-                    columnIndex = itemAtual.getColumns();
-                    break;
+
+                if (adicionado){
+                    break; //item foi add, já ñ é preciso procurar mais posições. Continuar a percorrer o genoma
                 }
             }
         }
-        return cuts;
+    }
+
+    //TODO
+    private void placement(Item item, int[][] material, double nCuts, double tamMaxPec) {
+        int[][] itemMatrix = item.getMatrix();
+        for (int i = 0; i < itemMatrix.length; i++) {
+            for (int j = 0; j < itemMatrix[i].length; j++) {
+                if (itemMatrix[i][j] != 0) {
+
+                    material[i][j] = item.getRepresentation(); //colocar peça
+                }
+            }
+        }
     }
 
     private boolean checkValidPlacement(Item item, int[][] material, int lineIndex, int columnIndex) {
