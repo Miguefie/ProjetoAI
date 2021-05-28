@@ -32,7 +32,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         for (int i = 0; i < this.genome.length; i++) {
             if(!itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
 
-                itemAleatorio = itemList.get(GeneticAlgorithm.random.nextInt(itemList.size()));
+                itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
                 this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
                 itemList.remove(itemAleatorio);
             }
