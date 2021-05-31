@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class StockingProblem implements Problem<StockingProblemIndividual> {
-    private int materialHeight;
+
+    private int materialHeight; //Altura
     private ArrayList<Item> items; //Genotipo Conjunto de Items (genomas)
 
     //TODO this class might require the definition of additional methods and/or attributes
@@ -22,6 +23,7 @@ public class StockingProblem implements Problem<StockingProblemIndividual> {
         for (int i = 0; i < items.size(); i++) {
             materialLength += getItems().get(i).getColumns();
         }
+
     }
 
     @Override
