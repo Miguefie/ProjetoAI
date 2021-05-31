@@ -10,11 +10,14 @@ import java.util.Random;
 public class StockingProblemIndividual extends IntVectorIndividual<StockingProblem, StockingProblemIndividual> {
     //TODO this class might require the definition of additional methods and/or attributes
 
+    private int[][] material; // Fenotipo
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
 
         //TODO
+        material = new int[problem.getMaterialLength()][problem.getMaterialHeight()];
+
         List<Integer> itemList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             itemList.add(i);
@@ -43,20 +46,23 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     public double computeFitness() {
         //TODO
         double cuts = 0;
-        int columnIndex=0;
+        int[] columnIndex = new int[problem.getMaterialLength()];
         for (int k = 0; k < genome.length; k++) {
             Item itemAtual = problem.getItems().get(k);
             for (int i = 0; i < problem.getMaterialLength(); i++) { // Linhas Do Material
-                for (int j = columnIndex; j < itemAtual.getColumns() + columnIndex; j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
-                    if (checkValidPlacement(itemAtual, problem.getMaterial(), i, j)) {
+                if(material[i][0] == 0) {
+                    columnIndex[i] = 0;
+                }
+                for (int j = columnIndex[i]; j < itemAtual.getColumns() + columnIndex[i]; j++) { // Colunas do Material (Vai ser o Tamanho das Pecas)
+                    if (checkValidPlacement(itemAtual, material, i, j)) {
                         cuts++;
-                        problem.getMaterial()[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                        material[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
                     }
                 }
-                columnIndex=0;
-                if(itemAtual.getLines()<=i) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item
+                columnIndex[i] += itemAtual.getMatrix()[i].length;
+
+                if(itemAtual.getLines()<=i+1) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item (+1 porque nao existe linhas "0")
                 {
-                    columnIndex = itemAtual.getColumns();
                     break;
                 }
             }
