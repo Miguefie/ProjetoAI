@@ -123,6 +123,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                 if (itemMatrix[i][j] != 0) {
 
                     material[i][j] = item.getRepresentation(); //Colocar peça!!!
+
                 }
             }
         }
@@ -160,7 +161,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         sb.append("\n\nMatriz: ");
         for (int i = 0; i < genome.length; i++) {
             materialChar = problem.getItems().get(genome[i]).getRepresentation();
-            sb.append(materialChar + ", ");
+            sb.append(materialChar + "\t");
         }
 
         return sb.toString();
