@@ -13,7 +13,9 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private int[][] material; // Fenotipo
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
-    private char materialChar; //para mostrar no toString
+
+    private char pecasChar; //para mostrar no toString
+    private char[][] matrixArray;
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -47,7 +49,9 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         this.material = original.material;
         this.nCuts = original.nCuts;
         this.tamMaxPec = original.tamMaxPec;
-        this.materialChar = original.materialChar;
+
+        this.pecasChar = original.pecasChar;
+        this.matrixArray = original.matrixArray;
     }
 
     @Override
@@ -56,6 +60,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         material = new int[problem.getMaterialHeight()][problem.getMaterialLength()];
         nCuts = 0;
         tamMaxPec = 0;
+        matrixArray = new char[problem.getMaterialHeight()][problem.getMaterialLength()];
 
         boolean adicionado = false;
         double tamPec = 0;
@@ -112,17 +117,27 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         System.out.println("tamMaxPec2 " + tamMaxPecPeso);
         System.out.println("fitness " + fitness);
 
+/*        for (int i = 0; i <matrixArray.length; i++) {
+            for (int j = 0; j <matrixArray [i].length; j++) {
+                System.out.print(matrixArray[i][j] + " ");//print each element
+            }
+            System.out.println("");
+        }*/
+
         return fitness;
     }
 
     //TODO
     private void placement(Item item, int[][] material) {
         int[][] itemMatrix = item.getMatrix();
+
         for (int i = 0; i < itemMatrix.length; i++) {
             for (int j = 0; j < itemMatrix[i].length; j++) {
                 if (itemMatrix[i][j] != 0) {
 
                     material[i][j] = item.getRepresentation(); //Colocar peça!!!
+
+                    matrixArray[i][j] = (char) material[i][j]; //assign values to each array element
 
                 }
             }
@@ -150,7 +165,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         StringBuilder sb = new StringBuilder();
 
         //TODO
-        sb.append("\n\nNºCortes: " + nCuts);
+        sb.append("NºCortes: " + nCuts);
         sb.append("\n\nTamanhoMaxPeça: " + tamMaxPec);
 
         sb.append("\n\nFitness: ");
@@ -158,10 +173,20 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
         sb.append("\n\nGenoma: " + Arrays.toString(genome));
 
-        sb.append("\n\nMatriz: ");
+        sb.append("\n\nPeças: ");
+        sb.append("[ ");
         for (int i = 0; i < genome.length; i++) {
-            materialChar = problem.getItems().get(genome[i]).getRepresentation();
-            sb.append(materialChar + "\t");
+            pecasChar = problem.getItems().get(genome[i]).getRepresentation();
+            sb.append(pecasChar + " ");
+        }
+        sb.append("]");
+
+        sb.append("\n\nMatriz: \n");
+        for (int i = 0; i < matrixArray.length; i++) {
+            for (int j = 0; j < matrixArray [i].length; j++) {
+                sb.append(matrixArray[i][j] + " ");//print each element
+            }
+            sb.append("\n");
         }
 
         return sb.toString();
