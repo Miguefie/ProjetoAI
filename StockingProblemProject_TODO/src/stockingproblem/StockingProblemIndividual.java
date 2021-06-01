@@ -38,8 +38,12 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
     public StockingProblemIndividual(StockingProblemIndividual original) {
         super(original);
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet.");
+        this.material = original.material;
+        //this.nCuts = original.nCuts;
+        //this.tamMaxPec = original.tamMaxPec;
+
+        //this.pecasChar = original.pecasChar;
+        //this.matrixArray = original.matrixArray;
     }
 
     @Override
@@ -47,6 +51,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         //TODO
         double cuts = 0;
         int[] columnIndex = new int[problem.getMaterialLength()];
+        boolean flag=false;
         for (int k = 0; k < genome.length; k++) {
             Item itemAtual = problem.getItems().get(k);
             for (int i = 0; i < problem.getMaterialLength(); i++) { // Linhas Do Material
@@ -57,11 +62,19 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                     if (checkValidPlacement(itemAtual, material, i, j)) {
                         cuts++;
                         material[i][j] = itemAtual.getRepresentation(); // Adiciona ao Fenotipo
+                        flag=false;
                     }
-                }
-                columnIndex[i] += itemAtual.getMatrix()[i].length;
+                    else
+                    {
+                        flag=true;
+                        break;
+                    }
 
-                if(itemAtual.getLines()<=i+1) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item (+1 porque nao existe linhas "0")
+                }
+
+                columnIndex[i] += itemAtual.getColumns();
+
+                if(itemAtual.getLines()<=i+1 && !flag) // se o Nr de linhas do Fenotipo for maior que o Nr de linhas do Item (+1 porque nao existe linhas "0")
                 {
                     break;
                 }
