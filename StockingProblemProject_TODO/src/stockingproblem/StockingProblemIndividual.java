@@ -14,8 +14,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
 
-    private char pecasChar; //para mostrar no toString
-    private char[][] matrixArray;
+    //private char pecasChar; //para mostrar no toString
+    //private char[][] matrixArray;
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -31,7 +31,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
         for (int i = 0; i < this.genome.length; i++) {
 
-            if(!itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
+            if (!itemList.isEmpty()) { //para ñ dar: IllegalArgumentException: Bound must be positive
 
                 itemAleatorio = itemList.get(rn.nextInt(itemList.size()));
                 this.genome[i] = itemAleatorio.intValue(); // Adiciona o Item aleatorio ao Genotipo
@@ -50,8 +50,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         this.nCuts = original.nCuts;
         this.tamMaxPec = original.tamMaxPec;
 
-        this.pecasChar = original.pecasChar;
-        this.matrixArray = original.matrixArray;
+        //this.pecasChar = original.pecasChar;
+        //this.matrixArray = original.matrixArray;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         material = new int[problem.getMaterialHeight()][problem.getMaterialLength()];
         nCuts = 0;
         tamMaxPec = 0;
-        matrixArray = new char[problem.getMaterialHeight()][problem.getMaterialLength()];
+        //matrixArray = new char[problem.getMaterialHeight()][problem.getMaterialLength()];
 
         boolean adicionado = false;
         double tamPec = 0;
@@ -69,47 +69,60 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
         for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para ver em q parte da matrix encaixa peça
 
-            for (int j = 0; j < problem.getMaterialLength() - 1; j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
-                for (int i = j; i < problem.getMaterialHeight() - 1; i++) { //3º percorre linhas
+            adicionado = false;
 
-                    /*se posições forem diferentes houve corte*/
-                    if (material[i][j] != material[i][j+1]){ //cortes na horizontal
-                        nCuts++;
-                    }
-                    if (material[i][j] != material[i+1][j]){ //cortes na vertical
-                        nCuts++;
-                    }
+            for (int j = 0; j < problem.getMaterialLength(); j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
+                for (int i = 0; i < problem.getMaterialHeight(); i++) { //3º percorre linhas
+
 
                     Item itemAtual = problem.getItems().get(genome[k]); //onde está o item
 
-                    if (checkValidPlacement(itemAtual, material, i, j)){
+                    if (checkValidPlacement(itemAtual, i, j)) {
 
-                        placement(itemAtual, material); //método aux para add item
+                        placement(itemAtual, i, j); //método aux para add item
 
                         adicionado = true;
 
-                        tamPec = itemAtual.getColumns();
-                        if (tamPec > tamMaxPec){ //se tamanho for maior substituir
-                            tamMaxPec = tamPec;
-                        }
+
 
                         break; //como já add peça à matrix temos de sair dos 'for' que percorrem a matrix
                     }
                 }
 
-                if (adicionado){
+                if (adicionado) {
                     break; //item foi add, já ñ é preciso procurar mais posições. Continuar a percorrer o genoma
                 }
             }
         }
 
+
+
+        for (int j = 0; j < problem.getMaterialLength(); j++) {
+            for (int i = 0; i < problem.getMaterialHeight()-1; i++) {
+
+                if (material[i][j] != material[i + 1][j]) { //cortes na vertical
+                    nCuts++;
+                }
+            }
+        }
+
+        for (int j = 0; j < problem.getMaterialLength()-1; j++) {
+            for (int i = 0; i < problem.getMaterialHeight(); i++) {
+
+                /*se posições forem diferentes houve corte*/
+                if (material[i][j] != material[i][j + 1]) { //cortes na horizontal
+                    nCuts++;
+                }
+            }
+        }
         System.out.println("\n");
         System.out.println("nCuts1 " + nCuts);
         System.out.println("tamMaxPec1 " + tamMaxPec);
 
+        tamMaxPec++;
         //nCuts e tamMaxPec não podem ter o mesmo peso:
-        nCutsPeso = nCuts*0.3;
-        tamMaxPecPeso = tamMaxPec*0.7;
+        nCutsPeso = nCuts * 0.3;
+        tamMaxPecPeso = tamMaxPec * 0.7;
 
         fitness = nCutsPeso + tamMaxPecPeso;
 
@@ -128,23 +141,26 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     }
 
     //TODO
-    private void placement(Item item, int[][] material) {
+    private void placement(Item item, int lineIndex, int columIndex) {
         int[][] itemMatrix = item.getMatrix();
 
         for (int i = 0; i < itemMatrix.length; i++) {
             for (int j = 0; j < itemMatrix[i].length; j++) {
                 if (itemMatrix[i][j] != 0) {
 
-                    material[i][j] = item.getRepresentation(); //Colocar peça!!!
+                    material[lineIndex+i][columIndex+j] = item.getRepresentation(); //Colocar peça!!!
 
-                    matrixArray[i][j] = (char) material[i][j]; //assign values to each array element
+                    if (tamMaxPec<columIndex+j){
+                        tamMaxPec=columIndex+j;
+                    }
+                    //matrixArray[i][j] = (char) material[i][j]; //assign values to each array element
 
                 }
             }
         }
     }
 
-    private boolean checkValidPlacement(Item item, int[][] material, int lineIndex, int columnIndex) {
+    private boolean checkValidPlacement(Item item, int lineIndex, int columnIndex) {
         int[][] itemMatrix = item.getMatrix();
         for (int i = 0; i < itemMatrix.length; i++) {
             for (int j = 0; j < itemMatrix[i].length; j++) {
@@ -176,15 +192,18 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         sb.append("\n\nPeças: ");
         sb.append("[ ");
         for (int i = 0; i < genome.length; i++) {
-            pecasChar = problem.getItems().get(genome[i]).getRepresentation();
-            sb.append(pecasChar + " ");
+
+            sb.append(problem.getItems().get(genome[i]).getRepresentation() + " ");
         }
         sb.append("]");
 
         sb.append("\n\nMatriz: \n");
-        for (int i = 0; i < matrixArray.length; i++) {
-            for (int j = 0; j < matrixArray [i].length; j++) {
-                sb.append(matrixArray[i][j] + " ");//print each element
+        for (int i = 0; i < material.length; i++) {
+            for (int j = 0; j < material[i].length; j++) {
+                if (material[i][j] == 0) {
+                    sb.append("  ");
+                } else
+                    sb.append((char) material[i][j] + " ");//print each element
             }
             sb.append("\n");
         }
