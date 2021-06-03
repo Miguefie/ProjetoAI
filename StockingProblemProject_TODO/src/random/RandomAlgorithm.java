@@ -4,13 +4,6 @@ import algorithms.Algorithm;
 import algorithms.AlgorithmEvent;
 import algorithms.Individual;
 import algorithms.Problem;
-import ga.GeneticAlgorithm;
-import ga.Population;
-import ga.geneticoperators.Mutation;
-import ga.geneticoperators.Recombination;
-import ga.selectionmethods.SelectionMethod;
-import gui.Main;
-import gui.MainFrame;
 
 import java.util.Random;
 
@@ -25,7 +18,6 @@ public class RandomAlgorithm<I extends Individual, P extends Problem<I>> extends
     public I run(P problem) {
 
         //TODO
-
         globalBest = problem.getNewIndividual();
         globalBest.computeFitness();
         fireIterationEnded(new AlgorithmEvent(this));

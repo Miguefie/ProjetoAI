@@ -14,9 +14,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
 
-    //private char pecasChar; //para mostrar no toString
-    //private char[][] matrixArray;
-
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
 
@@ -38,8 +35,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                 itemList.remove(itemAleatorio);
             }
         }
-
-        //System.out.println(Arrays.toString(genome));
     }
 
     public StockingProblemIndividual(StockingProblemIndividual original) {
@@ -49,9 +44,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         this.material = original.material;
         this.nCuts = original.nCuts;
         this.tamMaxPec = original.tamMaxPec;
-
-        //this.pecasChar = original.pecasChar;
-        //this.matrixArray = original.matrixArray;
     }
 
     @Override
@@ -60,10 +52,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         material = new int[problem.getMaterialHeight()][problem.getMaterialLength()];
         nCuts = 0;
         tamMaxPec = 0;
-        //matrixArray = new char[problem.getMaterialHeight()][problem.getMaterialLength()];
 
         boolean adicionado = false;
-        double tamPec = 0;
         double nCutsPeso = 0;
         double tamMaxPecPeso = 0;
 
@@ -74,7 +64,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             for (int j = 0; j < problem.getMaterialLength(); j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
                 for (int i = 0; i < problem.getMaterialHeight(); i++) { //3º percorre linhas
 
-
                     Item itemAtual = problem.getItems().get(genome[k]); //onde está o item
 
                     if (checkValidPlacement(itemAtual, i, j)) {
@@ -82,8 +71,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                         placement(itemAtual, i, j); //método aux para add item
 
                         adicionado = true;
-
-
 
                         break; //como já add peça à matrix temos de sair dos 'for' que percorrem a matrix
                     }
@@ -95,11 +82,10 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             }
         }
 
-
-
         for (int j = 0; j < problem.getMaterialLength(); j++) {
             for (int i = 0; i < problem.getMaterialHeight()-1; i++) {
 
+                /*se posições forem diferentes houve corte*/
                 if (material[i][j] != material[i + 1][j]) { //cortes na vertical
                     nCuts++;
                 }
@@ -115,11 +101,13 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                 }
             }
         }
+
         System.out.println("\n");
         System.out.println("nCuts1 " + nCuts);
         System.out.println("tamMaxPec1 " + tamMaxPec);
 
         tamMaxPec++;
+
         //nCuts e tamMaxPec não podem ter o mesmo peso:
         nCutsPeso = nCuts * 0.3;
         tamMaxPecPeso = tamMaxPec * 0.7;
@@ -129,13 +117,6 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         System.out.println("nCuts2 " + nCutsPeso);
         System.out.println("tamMaxPec2 " + tamMaxPecPeso);
         System.out.println("fitness " + fitness);
-
-/*        for (int i = 0; i <matrixArray.length; i++) {
-            for (int j = 0; j <matrixArray [i].length; j++) {
-                System.out.print(matrixArray[i][j] + " ");//print each element
-            }
-            System.out.println("");
-        }*/
 
         return fitness;
     }
@@ -151,10 +132,9 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
                     material[lineIndex+i][columIndex+j] = item.getRepresentation(); //Colocar peça!!!
 
                     if (tamMaxPec<columIndex+j){
+
                         tamMaxPec=columIndex+j;
                     }
-                    //matrixArray[i][j] = (char) material[i][j]; //assign values to each array element
-
                 }
             }
         }
