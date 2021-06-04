@@ -172,13 +172,19 @@ public class MainFrame extends JFrame implements AlgorithmListener {
             seriesAverage.clear();
             switch (panelParameters.getAlgorithm()) {
                 case 0:
+
+                    //TODO
+                    StockingProblemIndividual.percNCuts = Double.parseDouble(panelParameters.jTextFieldProbNCuts.getText());
+                    StockingProblemIndividual.perTamMaxPec = Double.parseDouble(panelParameters.jTextFieldProbTamMaxPec.getText());
+
                     algorithm = new GeneticAlgorithm<StockingProblemIndividual, StockingProblem>(
                             Integer.parseInt(panelParameters.jTextFieldN.getText()),
                             Integer.parseInt(panelParameters.jTextFieldGenerations.getText()),
                             panelParameters.getSelectionMethod(),
                             panelParameters.getRecombinationMethod(),
                             panelParameters.getMutationMethod(),
-                            new Random(Integer.parseInt(panelParameters.jTextFieldSeed.getText())));
+                            new Random(Integer.parseInt(panelParameters.jTextFieldSeed.getText()))
+                            );
 
                     System.out.println(algorithm);
                     break;
@@ -442,6 +448,9 @@ class PanelParameters extends PanelAtributesValue {
     public static final String TOURNAMENT_SIZE = "2";
     public static final String PROB_RECOMBINATION = "0.7";
     public static final String PROB_MUTATION = "0.1";
+    //TODO
+    public static final String PROB_nCuts = "0.3";
+    public static final String PROB_tamMaxPec = "0.7";
     JTextField jTextFieldSeed = new JTextField(SEED, TEXT_FIELD_LENGHT);
     JTextField jTextFieldN = new JTextField(POPULATION_SIZE, TEXT_FIELD_LENGHT);
     JTextField jTextFieldGenerations = new JTextField(GENERATIONS, TEXT_FIELD_LENGHT);
@@ -454,6 +463,9 @@ class PanelParameters extends PanelAtributesValue {
     String[] mutationMethods = {"Insert", "Mutation 2", "Mutation 3"};
     JComboBox jComboBoxMutationMethods = new JComboBox(mutationMethods);
     JTextField jTextFieldProbMutation = new JTextField(PROB_MUTATION, TEXT_FIELD_LENGHT);
+    //TODO
+    JTextField jTextFieldProbNCuts = new JTextField(PROB_nCuts, TEXT_FIELD_LENGHT);
+    JTextField jTextFieldProbTamMaxPec = new JTextField(PROB_tamMaxPec, TEXT_FIELD_LENGHT);
     String[] algorithms = {"GA", "Random"};
     JComboBox jComboBoxAlgorithms = new JComboBox(algorithms);
 
@@ -491,6 +503,12 @@ class PanelParameters extends PanelAtributesValue {
 
         labels.add(new JLabel("Mutation prob.: "));
         valueComponents.add(jTextFieldProbMutation);
+
+        labels.add(new JLabel("Nº Cuts prob.: "));
+        valueComponents.add(jTextFieldProbNCuts);
+
+        labels.add(new JLabel("Tam Max Peças prob.: "));
+        valueComponents.add(jTextFieldProbTamMaxPec);
 
         labels.add(new JLabel("Algorithms: "));
         valueComponents.add(jComboBoxAlgorithms);

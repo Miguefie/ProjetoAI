@@ -2,6 +2,7 @@ package stockingproblem;
 
 import algorithms.IntVectorIndividual;
 import ga.GeneticAlgorithm;
+import gui.MainFrame;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +14,9 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private int[][] material; // Fenotipo
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
+
+    public static double percNCuts;
+    public static double perTamMaxPec;
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
@@ -109,8 +113,10 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         tamMaxPec++;
 
         //nCuts e tamMaxPec não podem ter o mesmo peso:
-        nCutsPeso = nCuts * 0.3;
-        tamMaxPecPeso = tamMaxPec * 0.7;
+        //nCutsPeso = nCuts * 0.3;
+        //tamMaxPecPeso = tamMaxPec * 0.7;
+        nCutsPeso = nCuts * percNCuts;
+        tamMaxPecPeso = tamMaxPec * perTamMaxPec;
 
         fitness = nCutsPeso + tamMaxPecPeso;
 
