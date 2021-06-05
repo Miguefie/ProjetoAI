@@ -13,17 +13,17 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
     @Override
     public void recombine(I ind1, I ind2) {
         //TODO
-        int cut1 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
-        int cut2 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
-        if (cut1 > cut2) {
-            int aux = cut1;
-            cut1 = cut2;
-            cut2 = aux;
+        int[] child1 = new int[ind1.getNumGenes()];
+        int[] child2 = new int[ind2.getNumGenes()];
+        int[] cycle = new int[ind1.getNumGenes()];
+        for (int i = 0; i < ind1.getNumGenes(); i++) {
+            ind2.getGene(ind2.getIndexof(ind1.getGene(i)));
+
         }
 
-        for (int i = cut1; i < cut2; i++) {
-            ind1.swapGenes(ind2,i);
-        }
+        do {
+            ind1.getGene(i);
+        }while();
     }
 
     @Override
