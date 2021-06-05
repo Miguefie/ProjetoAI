@@ -17,7 +17,8 @@ public class Mutation2<I extends IntVectorIndividual, P extends Problem<I>> exte
         int cut2;
         do {
             cut2 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
-        }while (cut1==cut2);
+
+        }while (cut1==cut2); //Assegura que cut1!=cut2
         /*
         int cut1 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
         int cut2 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
@@ -26,6 +27,7 @@ public class Mutation2<I extends IntVectorIndividual, P extends Problem<I>> exte
         }
         */
 
+        //Afetua a troca dos genes escolhidos
         int aux = ind.getGene(cut1);
         ind.setGene(cut1,ind.getGene(cut2));
         ind.setGene(cut2,aux);
