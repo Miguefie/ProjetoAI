@@ -22,6 +22,14 @@ public class Population <I extends Individual, P extends Problem<I>>{
         }
     }
 
+    //TODO
+    public Population(int size, List<I> listIndividuals) {
+        individuals = new ArrayList<>(size);
+        for (int i = 0; i < size; i++) {
+            individuals.add(listIndividuals.get(i));
+        }
+    }
+
     public I evaluate(){
         best = getIndividual(0);
         for (I individual : individuals) {
@@ -48,7 +56,12 @@ public class Population <I extends Individual, P extends Problem<I>>{
     public I getIndividual(int index) {
         return individuals.get(index);
     }
-    
+
+    //TODO
+    public List<I> getIndividuals() {
+        return individuals;
+    }
+
     public I getBest(){
         return best;
     }

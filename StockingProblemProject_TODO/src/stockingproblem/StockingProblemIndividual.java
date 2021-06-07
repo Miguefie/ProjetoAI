@@ -106,23 +106,21 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             }
         }
 
-        System.out.println("\n");
+/*        System.out.println("\n");
         System.out.println("nCuts1 " + nCuts);
-        System.out.println("tamMaxPec1 " + tamMaxPec);
+        System.out.println("tamMaxPec1 " + tamMaxPec);*/
 
         tamMaxPec++;
 
         //nCuts e tamMaxPec não podem ter o mesmo peso:
-        //nCutsPeso = nCuts * 0.3;
-        //tamMaxPecPeso = tamMaxPec * 0.7;
-        nCutsPeso = nCuts * percNCuts;
-        tamMaxPecPeso = tamMaxPec * perTamMaxPec;
+        nCutsPeso = nCuts * percNCuts; //nCutsPeso = nCuts * 0.3;
+        tamMaxPecPeso = tamMaxPec * perTamMaxPec; //tamMaxPecPeso = tamMaxPec * 0.7;
 
         fitness = nCutsPeso + tamMaxPecPeso;
 
-        System.out.println("nCuts2 " + nCutsPeso);
+/*        System.out.println("nCuts2 " + nCutsPeso);
         System.out.println("tamMaxPec2 " + tamMaxPecPeso);
-        System.out.println("fitness " + fitness);
+        System.out.println("fitness " + fitness);*/
 
         return fitness;
     }

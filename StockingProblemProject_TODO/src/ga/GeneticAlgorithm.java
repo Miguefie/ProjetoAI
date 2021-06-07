@@ -6,6 +6,8 @@ import ga.geneticoperators.Mutation;
 import ga.geneticoperators.Recombination;
 import ga.selectionmethods.SelectionMethod;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extends Algorithm<I, P> {
@@ -39,11 +41,14 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
 
         while (t < maxIterations && !stopped) {
             Population<I, P> populationAux = selection.run(population);
+
+            //TODO
+            populationAux = elitismo(population, populationAux);
+
             recombination.run(populationAux);
             mutation.run(populationAux);
 
-            //population = populationAux;
-            population = elitismo(population, populationAux, problem);
+            population = populationAux;
 
             I bestInGen = population.evaluate();
             computeBestInRun(bestInGen);
@@ -65,20 +70,13 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
     }
 
     //TODO
-    public Population<I, P> elitismo(Population<I, P> population, Population<I, P> populationAux, P problem) {
+    public Population<I, P> elitismo(Population<I, P> population, Population<I, P> populationAux) {
 
-        int populationSize = (int) (population.getSize()*0.1); //10% da população original
-        int populationAuxSize = (int) (populationAux.getSize()*0.9); //90% da população após seleção e operadores
+        int populationAuxSize = (int) (populationAux.getSize()-1); //populationAux vai ter menos 1 individuo
 
-        populationAux = new Population<>(populationAuxSize, problem); //A populationAux passa a ter 90% do seu size total
+        populationAux = new Population<>(populationAuxSize, populationAux.getIndividuals()); //Faz um clone da populationAux, agora com menos 1 individuo
 
-        //adiciona à populationAux os melhores 10% de individuos da population
-        for (int i = 0; i < populationSize; i++) {
-
-            I bestElite = population.evaluate(); //vai buscar o melhor individuo
-
-            populationAux.addIndividual(bestElite); //adiciona individuo à populationAux
-        }
+        populationAux.addIndividual(population.getBest()); //Adiciona melhor individuo da população original
 
         return populationAux;
     }
