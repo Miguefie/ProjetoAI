@@ -41,7 +41,10 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
             Population<I, P> populationAux = selection.run(population);
             recombination.run(populationAux);
             mutation.run(populationAux);
-            population = populationAux;
+
+            //population = populationAux;
+            population = elitismo(population, populationAux, problem);
+
             I bestInGen = population.evaluate();
             computeBestInRun(bestInGen);
             t++;
@@ -59,6 +62,25 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
 
     public double getAverageFitness() {
         return population.getAverageFitness();
+    }
+
+    //TODO
+    public Population<I, P> elitismo(Population<I, P> population, Population<I, P> populationAux, P problem) {
+
+        int populationSize = (int) (population.getSize()*0.1); //10% da população original
+        int populationAuxSize = (int) (populationAux.getSize()*0.9); //90% da população após seleção e operadores
+
+        populationAux = new Population<>(populationAuxSize, problem); //A populationAux passa a ter 90% do seu size total
+
+        //adiciona à populationAux os melhores 10% de individuos da population
+        for (int i = 0; i < populationSize; i++) {
+
+            I bestElite = population.evaluate(); //vai buscar o melhor individuo
+
+            populationAux.addIndividual(bestElite); //adiciona individuo à populationAux
+        }
+
+        return populationAux;
     }
 
 
