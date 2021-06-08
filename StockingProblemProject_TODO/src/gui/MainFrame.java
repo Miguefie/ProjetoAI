@@ -454,7 +454,7 @@ class PanelParameters extends PanelAtributesValue {
     JTextField jTextFieldSeed = new JTextField(SEED, TEXT_FIELD_LENGHT);
     JTextField jTextFieldN = new JTextField(POPULATION_SIZE, TEXT_FIELD_LENGHT);
     JTextField jTextFieldGenerations = new JTextField(GENERATIONS, TEXT_FIELD_LENGHT);
-    String[] selectionMethods = {"Tournament", "Roulette wheel"};
+    String[] selectionMethods = {"Tournament", "Roulette wheel", "Rank Based Selection"};
     JComboBox jComboBoxSelectionMethods = new JComboBox(selectionMethods);
     JTextField jTextFieldTournamentSize = new JTextField(TOURNAMENT_SIZE, TEXT_FIELD_LENGHT);
     String[] recombinationMethods = {"PMX", "Recombination 2", "Recombination 3"};
@@ -528,6 +528,9 @@ class PanelParameters extends PanelAtributesValue {
                         Integer.parseInt(jTextFieldTournamentSize.getText()));
             case 1:
                 return new RouletteWheel<>(
+                        Integer.parseInt(jTextFieldN.getText()));
+            case 2:
+                return new RankBased<>(
                         Integer.parseInt(jTextFieldN.getText()));
         }
         return null;
