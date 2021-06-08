@@ -6,6 +6,8 @@ import ga.geneticoperators.Mutation;
 import ga.geneticoperators.Recombination;
 import ga.selectionmethods.SelectionMethod;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extends Algorithm<I, P> {
@@ -39,9 +41,15 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
 
         while (t < maxIterations && !stopped) {
             Population<I, P> populationAux = selection.run(population);
+
+            //TODO
+            populationAux = elitismo(population, populationAux);
+
             recombination.run(populationAux);
             mutation.run(populationAux);
+
             population = populationAux;
+
             I bestInGen = population.evaluate();
             computeBestInRun(bestInGen);
             t++;
@@ -59,6 +67,18 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> extend
 
     public double getAverageFitness() {
         return population.getAverageFitness();
+    }
+
+    //TODO
+    public Population<I, P> elitismo(Population<I, P> population, Population<I, P> populationAux) {
+
+        int populationAuxSize = (int) (populationAux.getSize()-1); //populationAux vai ter menos 1 individuo
+
+        populationAux = new Population<>(populationAuxSize, populationAux.getIndividuals()); //Faz um clone da populationAux, agora com menos 1 individuo
+
+        populationAux.addIndividual(population.getBest()); //Adiciona melhor individuo da população original
+
+        return populationAux;
     }
 
 

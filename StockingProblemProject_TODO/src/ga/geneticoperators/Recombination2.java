@@ -19,6 +19,6 @@ public class Recombination2<I extends IntVectorIndividual, P extends Problem<I>>
 
     @Override
     public String toString() {
-        return "One cut recombination (" + probability + ")";
+        return "Cycle recombination";
     }
 }
