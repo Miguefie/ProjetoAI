@@ -33,6 +33,6 @@ public class MutationInsert<I extends IntVectorIndividual, P extends Problem<I>>
 
     @Override
     public String toString() {
-        return "Insert mutation";
+        return "Insert mutation (" + probability + ")";
     }
 }

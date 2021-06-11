@@ -32,6 +32,7 @@ public class RankBased<I extends Individual, P extends Problem<I>> extends Selec
     }
 
 
+/*
     private I rankBased (Population<I, P> population)
     {
         for (int i = 0; i < popSize; i++) {
@@ -44,6 +45,7 @@ public class RankBased<I extends Individual, P extends Problem<I>> extends Selec
 
         return
     }
+*/
 
     @Override
     public String toString(){
