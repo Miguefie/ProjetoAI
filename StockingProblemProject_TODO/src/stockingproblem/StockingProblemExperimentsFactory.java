@@ -54,13 +54,13 @@ public class StockingProblemExperimentsFactory extends ExperimentsFactory {
             case "recombination2": //TODO
                 recombination = new Recombination2<>(recombinationProbability);
                 break;
-            case "recombination3": //TODO
+            case "cycle_crossover": //TODO
                 recombination = new Recombination3<>(recombinationProbability);
                 break;
         }
 
         //MUTATION
-        double mutationProbability = Double.parseDouble(getParameterValue("Mutation probability"));
+        double mutationProbability = Double.parseDouble(getParameterValue("Mutation_probability"));
 
         switch (getParameterValue("Mutation")) {
             case "insert":

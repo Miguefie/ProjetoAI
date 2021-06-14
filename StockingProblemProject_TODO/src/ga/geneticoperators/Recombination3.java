@@ -14,25 +14,33 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
     public void recombine(I ind1, I ind2) {
         //TODO Cycle Crossover
         int[] child1 = new int[ind1.getNumGenes()];
-        int[] child2 = new int[ind2.getNumGenes()];
-        int[] cycle1 = new int[ind1.getNumGenes()];
-        int[] cycle2 = new int[ind1.getNumGenes()];
-        for (int i = 0; i < ind1.getNumGenes(); i++) {
+        int[] child2 = new int[ind1.getNumGenes()];
+        /*boolean[]
+
+        int position = 0;
+        do {
+            int allele = ind1.getGene(position); //allele parent 1
+            position = ind2.getIndexof(allele); //position from parent 2
+
+        }while();
+
+
+
+
+
             int positionAllele = ind2.getIndexof(ind1.getGene(i));
             int allele = ind1.getGene(positionAllele);
             cycle1[i]=allele;
 
             positionAllele = ind1.getIndexof(ind2.getGene(i));
             allele = ind2.getGene(positionAllele);
-            cycle2[i]=allele;
+            cycle2[i]=allele;*/
 
-        }
-        child1 = cycle1;
-        child2 = cycle2;
+
     }
 
     @Override
     public String toString(){
-        return "Cycle Crossover (" + probability + ")";
+        return "Cycle Crossover";
     }    
 }

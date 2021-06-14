@@ -17,7 +17,6 @@ public class RankBased<I extends Individual, P extends Problem<I>> extends Selec
     @Override
     public Population<I, P> run(Population<I, P> original) {
         Population<I, P> result = new Population<>(original.getSize());
-        I bestIndividual = original.getBest();
         List<I> selectedIndividuals = original.getIndividuals();
 
         for (int i = 0; i < popSize; i++) {
