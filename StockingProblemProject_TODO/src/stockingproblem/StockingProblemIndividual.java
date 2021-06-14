@@ -165,11 +165,12 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         StringBuilder sb = new StringBuilder();
 
         //TODO
-        sb.append("NºCortes: " + nCuts);
+        sb.append("\nNºCortes: " + nCuts);
         sb.append("\n\nTamanhoMaxPeça: " + tamMaxPec);
 
         sb.append("\n\nFitness: ");
         sb.append(fitness);
+        //System.out.println("\n" + fitness);
 
         sb.append("\n\nGenoma: " + Arrays.toString(genome));
 
