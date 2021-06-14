@@ -45,6 +45,6 @@ public class Mutation3<I extends IntVectorIndividual, P extends Problem<I>> exte
 
     @Override
     public String toString(){
-        return "Inversion mutation";
+        return "Inversion mutation (" + probability + ")";
     }
 }
