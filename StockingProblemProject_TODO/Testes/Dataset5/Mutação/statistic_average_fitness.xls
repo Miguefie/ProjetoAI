@@ -1,0 +1,10 @@
+Population size:	Max generations:	Selection:	Recombination:	Recombination prob.:	Mutation:	Mutation prob.:		Average:	StdDev:
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Insert mutation (0.1)	0.1		417.55	2.5582220388386903
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Insert mutation (0.2)	0.2		416.043	2.444406312833901
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Insert mutation (0.3)	0.3		415.27	2.777906885888497
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.1)	0.1		415.947	2.3624469423789334
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.2)	0.2		414.707	2.4603432461526356
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		414.097	1.9391550278980307
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Inversion mutation (0.1)	0.1		419.04	2.5268689452891446
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Inversion mutation (0.2)	0.2		418.94	2.674646394074059
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Inversion mutation (0.3)	0.3		417.18	3.2225662651578415
