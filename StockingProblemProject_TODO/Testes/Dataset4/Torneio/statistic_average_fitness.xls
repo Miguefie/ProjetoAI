@@ -1,0 +1,4 @@
+Population size:	Max generations:	Selection:	Recombination:	Recombination prob.:	Mutation:	Mutation prob.:		Average:	StdDev:
+200	50	Tournament(2)	Order recombination (0.6)	0.6	Inversion mutation (0.2)	0.2		93.133	1.3287420951996507
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Inversion mutation (0.2)	0.2		91.927	1.858482056829058
+200	50	Tournament(10)	Order recombination (0.6)	0.6	Inversion mutation (0.2)	0.2		92.6	1.762573875520307
