@@ -39,9 +39,9 @@ public class StatisticBestAverage<E extends Individual, P extends Problem<E>> im
 
         double average = Maths.average(values);
         double sd = Maths.standardDeviation(values, average);
-
+        
         String experimentConfigurationValues = ((Experiment) e.getSource()).getExperimentValues();
 
-        utils.FileOperations.appendToTextFile("statistic_average_fitness.xls", experimentConfigurationValues + "\t" + average + "\t" + sd + "\r\n");
+        utils.FileOperations.appendToTextFile("statistic_average_fitness.xls", experimentConfigurationValues + "\t" + (double) Math.round(average*1000)/1000 + "\t" + sd + "\r\n");
     }
 }

@@ -43,7 +43,7 @@ public class StatisticBestInRun<I extends Individual, P extends Problem<I>> impl
         String experimentHeader = ((Experiment) e.getSource()).getExperimentHeader();
         String experimentConfigurationValues = ((Experiment) e.getSource()).getExperimentValues();
 
-        utils.FileOperations.appendToTextFile("statistic_best_per_experiment_fitness.xls", experimentConfigurationValues + "\t" + bestInExperiment.getFitness() + "\t" + bestRun + "\r\n");
+        utils.FileOperations.appendToTextFile("statistic_best_per_experiment_fitness.xls", experimentConfigurationValues + "\t" + (double) Math.round(bestInExperiment.getFitness()*1000)/1000 + "\t" + bestRun + "\r\n");
         utils.FileOperations.appendToTextFile("statistic_best_per_experiment.txt", "\r\n\r\n" + experimentTextualRepresentation + "\r\n" + bestInExperiment);
     }
 }

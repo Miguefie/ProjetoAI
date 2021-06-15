@@ -24,6 +24,9 @@ public class StockingProblemExperimentsFactory extends ExperimentsFactory {
     private StockingProblem problem;
     private Experiment<StockingProblemExperimentsFactory, StockingProblem> experiment;
 
+    //private double percNCuts;
+    //private double perTamMaxPec;
+
     public StockingProblemExperimentsFactory(File configFile) throws IOException {
         super(configFile);
     }
@@ -103,6 +106,9 @@ public class StockingProblemExperimentsFactory extends ExperimentsFactory {
     @Override
     public GeneticAlgorithm generateGAInstance(int seed) {
         GeneticAlgorithm<StockingProblemIndividual, StockingProblem> ga;
+
+        //percNCuts = StockingProblemIndividual.percNCuts;
+        //perTamMaxPec = StockingProblemIndividual.perTamMaxPec;
 
         ga = new GeneticAlgorithm<>(
                 populationSize,

@@ -15,8 +15,8 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
     private double nCuts;
     private double tamMaxPec; //quantas colunas gastei para colucar material?
 
-    public static double percNCuts;
-    public static double perTamMaxPec;
+    public static double percNCuts = 0.3;
+    public static double perTamMaxPec = 0.7;
 
     public StockingProblemIndividual(StockingProblem problem, int size) {
         super(problem, size);
