@@ -4,6 +4,8 @@ import algorithms.IntVectorIndividual;
 import algorithms.Problem;
 import ga.GeneticAlgorithm;
 
+import java.util.HashSet;
+
 public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>> extends Recombination<I, P> {
 
     public Recombination3(double probability) {
@@ -15,28 +17,36 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
         //TODO Cycle Crossover
         int[] child1 = new int[ind1.getNumGenes()];
         int[] child2 = new int[ind1.getNumGenes()];
-        /*boolean[]
+        boolean[] positions = new boolean[ind1.getNumGenes()];
+        int[][] cycles = new int[ind1.getNumGenes()][ind1.getNumGenes()];
+        int nrCycles=0;
 
-        int position = 0;
+        for (int i = 0; i < positions.length; i++) {
+            if(!positions[i]) // positions[i] == false
+            {
+                cycles[nrCycles] = getcycle(ind1, ind2, cycles[i], positions, i);
+                nrCycles++;
+            }
+
+        }
+
+
+    }
+
+    public int[] getcycle (I ind1, I ind2, int[] cycle, boolean[] positions, int indice)
+    {
+        int position = indice;
+        int i=0;
         do {
             int allele = ind1.getGene(position); //allele parent 1
             position = ind2.getIndexof(allele); //position from parent 2
+            cycle[i] = allele;
+            i++;
+            positions[ind1.getIndexof(allele)] = true;
 
-        }while();
+        }while(ind1.getGene(position) != cycle[0]);
 
-
-
-
-
-            int positionAllele = ind2.getIndexof(ind1.getGene(i));
-            int allele = ind1.getGene(positionAllele);
-            cycle1[i]=allele;
-
-            positionAllele = ind1.getIndexof(ind2.getGene(i));
-            allele = ind2.getGene(positionAllele);
-            cycle2[i]=allele;*/
-
-
+        return cycle;
     }
 
     @Override
