@@ -277,3 +277,282 @@ p p p o o o Y Y Y r r a a a n n n l l h C L R u u u q q q q q d i
 e e e e e e Y Y Y r r t t t t H H l l F F L R u u u N N m m m d i                                                                                                                                                                                                                   
 I I I O O j j j j r r t t t t g g g g g g g R u u u N N m m m d i                                                                                                                                                                                                                   
 K K K O O j j j j r r t t t t S S S S Q Q Q Q W W W W W m m m d                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Insert mutation (0.1)
+Mutation prob.: 0.1
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [49, 34, 28, 40, 50, 22, 25, 48, 36, 4, 17, 47, 41, 38, 20, 51, 45, 27, 19, 14, 1, 43, 26, 35, 21, 18, 3, 33, 12, 31, 29, 42, 44, 32, 16, 37, 24, 8, 10, 11, 5, 30, 46, 2, 13, 39, 15, 7, 6, 9, 0, 23]
+
+Peças: [ x i c o y W Z w k E R v p m U z t b T O B r a j V S D h M f d q s g Q l Y I K L F e u C N n P H G J A X ]
+
+Matriz: 
+x x x i o o o b b k k R p p p t t t t r r V h f d s s s s s n n n                                                                                                                                                                                                                   
+x x x i o o o b b k k R p p p t t t t r r V h f d s s s s s n n n                                                                                                                                                                                                                   
+x x x i o o o b b k k R p p p t t t t r r V h f d l l K K K n n n                                                                                                                                                                                                                   
+x x x i y y y y y k k R F F m m m L T r r V h f d l l e e e e e e                                                                                                                                                                                                                   
+x x x i y y y y y M M v v v m m m L T r r V h f d l l u u u P P X                                                                                                                                                                                                                   
+E O O i y y y y y M M v v v m m m L T Y Y Y h f d l l u u u P P X                                                                                                                                                                                                                   
+E O O i B D Z Z w w w v v v z z z z T Y Y Y h Q Q Q Q u u u G J X                                                                                                                                                                                                                   
+c c c c c c Z Z w w w v v v z z z z j j j j q q q q q u u u G J X                                                                                                                                                                                                                   
+W W W W W C Z Z w w w a a a z z z z j j j j q q q q q H H N N J X                                                                                                                                                                                                                   
+U U U U U I I I w w w a a a z z z z S S S S g g g g g g g N N A                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Insert mutation (0.2)
+Mutation prob.: 0.2
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [12, 51, 16, 39, 33, 48, 6, 44, 32, 4, 7, 13, 23, 14, 21, 9, 40, 43, 37, 15, 35, 2, 29, 41, 50, 0, 28, 11, 30, 34, 27, 36, 22, 10, 20, 19, 49, 46, 31, 38, 25, 26, 24, 8, 42, 5, 18, 45, 1, 47, 3, 17]
+
+Peças: [ M z Q n h w G s g E H N X O V J o r l P j C d p y A c L e i b k W K U T x u f m Z a Y I q F S t B v D R ]
+
+Matriz: 
+M M G E h w w w X V o o o L d p p p b b i k k u u u m m m t t t t                                                                                                                                                                                                                   
+M M G E h w w w X V o o o L d p p p b b i k k u u u m m m t t t t                                                                                                                                                                                                                   
+z z z z h w w w X V o o o L d p p p b b i k k u u u m m m t t t t                                                                                                                                                                                                                   
+z z z z h w w w X V r r l l d y y y y y i k k u u u Z Z q q q q q                                                                                                                                                                                                                   
+z z z z h H H C X V r r l l d y y y y y i T x x x f Z Z q q q q q                                                                                                                                                                                                                   
+z z z z h N N O O J r r l l d y y y y y i T x x x f Z Z S S S S R                                                                                                                                                                                                                   
+Q Q Q Q h N N O O J r r l l e e e e e e i T x x x f a a a v v v R                                                                                                                                                                                                                   
+n n n s s s s s A J r r j j j j W W W W W T x x x f a a a v v v R                                                                                                                                                                                                                   
+n n n s s s s s F F P P j j j j K K K I I I x x x f Y Y Y v v v R                                                                                                                                                                                                                   
+n n n g g g g g g g P P c c c c c c U U U U U B D f Y Y Y v v v                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Insert mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [34, 26, 25, 35, 40, 31, 47, 30, 24, 39, 21, 6, 0, 11, 32, 51, 16, 19, 23, 15, 41, 27, 42, 18, 20, 29, 13, 44, 38, 3, 50, 45, 28, 22, 43, 17, 49, 10, 5, 7, 12, 36, 37, 9, 33, 4, 46, 48, 8, 2, 14, 1]
+
+Peças: [ i a Z j o f v e Y n V G A L g z Q T X P p b q S U d N s m D y t c W r R x K F H M k l J h E u w I C O B ]
+
+Matriz: 
+i Z Z o o o v v v V z z z z X U U U U U c c c c c c x x x h u u u                                                                                                                                                                                                                   
+i Z Z o o o v v v V z z z z X N N d m m m W W W W W x x x h u u u                                                                                                                                                                                                                   
+i Z Z o o o v v v V z z z z X N N d m m m M M r r R x x x h u u u                                                                                                                                                                                                                   
+i j j j j f v v v V z z z z X F F d m m m M M r r R x x x h u u u                                                                                                                                                                                                                   
+i j j j j f n n n V D b b T X H H d y y y y y r r R x x x h w w w                                                                                                                                                                                                                   
+i Y Y Y A f n n n P P b b T p p p d y y y y y r r R C l l h w w w                                                                                                                                                                                                                   
+i Y Y Y L f n n n P P b b T p p p d y y y y y r r k k l l h w w w                                                                                                                                                                                                                   
+a a a G L f g g g g g g g T p p p K K K t t t t J k k l l E w w w                                                                                                                                                                                                                   
+a a a G L f Q Q Q Q q q q q q s s s s s t t t t J k k l l E O O B                                                                                                                                                                                                                   
+e e e e e e S S S S q q q q q s s s s s t t t t J k k I I I O O                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.1)
+Mutation prob.: 0.1
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [46, 13, 36, 20, 50, 6, 47, 18, 24, 31, 15, 49, 30, 44, 16, 4, 23, 19, 11, 32, 35, 33, 51, 0, 43, 37, 28, 34, 45, 5, 17, 14, 48, 39, 1, 10, 42, 25, 21, 26, 12, 22, 27, 7, 3, 9, 2, 41, 38, 8, 40, 29]
+
+Peças: [ u N k U y G v S Y f P x e s Q E X T L g j h z A r l c i t F R O w n B K q Z V a M W b H D J C p m I o d ]
+
+Matriz: 
+u u u v v v Y Y Y s s s s s r r R h z z z z i w w w V M M J o o o                                                                                                                                                                                                                   
+u u u v v v Y Y Y s s s s s r r R h z z z z i w w w V M M J o o o                                                                                                                                                                                                                   
+u u u v v v E f x x x X T L r r R h z z z z i w w w V b b J o o o                                                                                                                                                                                                                   
+u u u v v v E f x x x X T L r r R h z z z z i w w w V b b p p p d                                                                                                                                                                                                                   
+N N U U U U U f x x x X T L r r D h l l Z Z i n n n V b b p p p d                                                                                                                                                                                                                   
+N N y y y y y f x x x X T j j j j h l l Z Z i n n n a a a p p p d                                                                                                                                                                                                                   
+k k y y y y y f x x x X B j j j j h l l Z Z i n n n a a a m m m d                                                                                                                                                                                                                   
+k k y y y y y f e e e e e e F F O O l l t t t t q q q q q m m m d                                                                                                                                                                                                                   
+k k G S S S S P P g g g g g g g O O H H t t t t q q q q q m m m d                                                                                                                                                                                                                   
+k k G Q Q Q Q P P A c c c c c c K K K C t t t t W W W W W I I I                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.2)
+Mutation prob.: 0.2
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [47, 5, 12, 13, 32, 44, 41, 26, 48, 30, 38, 33, 29, 50, 9, 15, 39, 11, 17, 34, 40, 35, 51, 2, 10, 31, 43, 37, 45, 22, 21, 0, 6, 23, 25, 42, 14, 3, 46, 1, 24, 18, 36, 19, 28, 49, 27, 20, 16, 4, 8, 7]
+
+Peças: [ v F M N g s p a w e m h d y J P n L R i o j z C K f r l t W V A G X Z q O D u B Y S k T c x b U Q E I H ]
+
+Matriz: 
+v v v a a a w w w d J h n n n i j j j j f r r V X u u u k k x x x                                                                                                                                                                                                                   
+v v v a a a w w w d J h n n n i j j j j f r r V X u u u k k x x x                                                                                                                                                                                                                   
+v v v P P C w w w d J h n n n i z z z z f r r V X u u u k k x x x                                                                                                                                                                                                                   
+v v v P P A w w w d L h R l l i z z z z f r r V X u u u k k x x x                                                                                                                                                                                                                   
+F F s s s s s O O d L h R l l i z z z z f r r V X Q Q Q Q T x x x                                                                                                                                                                                                                   
+M M s s s s s O O d L h R l l i z z z z f I I I q q q q q T b b E                                                                                                                                                                                                                   
+M M p p p e e e e e e h R l l i K K K W W W W W q q q q q T b b E                                                                                                                                                                                                                   
+N N p p p G D m m m y y y y y o o o t t t t Z Z Y Y Y H H T b b                                                                                                                                                                                                                     
+N N p p p G B m m m y y y y y o o o t t t t Z Z Y Y Y c c c c c c                                                                                                                                                                                                                   
+g g g g g g g m m m y y y y y o o o t t t t Z Z S S S S U U U U U                                                                                                                                                                                                                   
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [43, 35, 29, 33, 41, 28, 27, 34, 45, 15, 46, 7, 23, 48, 22, 13, 36, 0, 38, 20, 51, 14, 16, 19, 49, 32, 40, 37, 50, 6, 44, 47, 8, 18, 26, 5, 9, 30, 17, 12, 39, 2, 1, 10, 25, 42, 11, 31, 3, 21, 24, 4]
+
+Peças: [ r j d h p c b i t P u H X w W N k A m U z O Q T x g o l y G s v I S a F J e R M n C B K Z q L f D V Y E ]
+
+Matriz: 
+r r b b d h i t t t t w w w z z z z x x x l l v v v a a a Z Z f V                                                                                                                                                                                                                   
+r r b b d h i t t t t w w w z z z z x x x l l v v v a a a Z Z f V                                                                                                                                                                                                                   
+r r b b d h i t t t t w w w z z z z x x x l l v v v J M M Z Z f V                                                                                                                                                                                                                   
+r r P P d h i u u u X w w w z z z z x x x l l v v v J M M D L f V                                                                                                                                                                                                                   
+r r P P d h i u u u X k k m m m G T x x x y y y y y J n n n L f V                                                                                                                                                                                                                   
+j j j j d h i u u u X k k m m m G T o o o y y y y y R n n n L f                                                                                                                                                                                                                     
+j j j j A h i u u u X k k m m m B T o o o y y y y y R n n n Y Y Y                                                                                                                                                                                                                   
+p p p c c c c c c C X k k F F O O T o o o s s s s s R K K K Y Y Y                                                                                                                                                                                                                   
+p p p H H I I I N N U U U U U O O S S S S s s s s s R q q q q q E                                                                                                                                                                                                                   
+p p p W W W W W N N Q Q Q Q g g g g g g g e e e e e e q q q q q E                                                                                                                                                                                                                   
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Inversion mutation (0.1)
+Mutation prob.: 0.1
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [23, 27, 39, 20, 42, 41, 16, 48, 43, 10, 14, 51, 26, 29, 37, 44, 35, 24, 36, 34, 47, 31, 22, 18, 2, 49, 21, 45, 11, 5, 19, 33, 17, 28, 15, 46, 50, 30, 4, 7, 12, 13, 38, 32, 8, 3, 40, 9, 25, 6, 0, 1]
+
+Peças: [ X b n U q p Q w r K O z a d l s j Y k i v f W S C x V t L F T h R c P u y e E H M N m g I D o J Z G A B ]
+
+Matriz: 
+X n n n O O r r z z z z s s s s s v v v R x x x h u u u E G m m m                                                                                                                                                                                                                   
+X n n n O O r r z z z z s s s s s v v v R x x x h u u u E G m m m                                                                                                                                                                                                                   
+X n n n C D r r z z z z j j j j i v v v R x x x h u u u M M m m m                                                                                                                                                                                                                   
+X q q q q q r r z z z z j j j j i v v v R x x x h u u u M M o o o                                                                                                                                                                                                                   
+X q q q q q r r a a a d Y Y Y f i S S S S x x x h y y y y y o o o                                                                                                                                                                                                                   
+b b p p p w w w a a a d Y Y Y f i t t t t V P P h y y y y y o o o                                                                                                                                                                                                                   
+b b p p p w w w l l L d k k T f i t t t t V P P h y y y y y J Z Z                                                                                                                                                                                                                   
+b b p p p w w w l l L d k k T f i t t t t V c c c c c c N N J Z Z                                                                                                                                                                                                                   
+U U U U U w w w l l L d k k T f i F F H H V e e e e e e N N J Z Z                                                                                                                                                                                                                   
+Q Q Q Q K K K A l l B d k k T f W W W W W V g g g g g g g I I I                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Inversion mutation (0.2)
+Mutation prob.: 0.2
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [14, 31, 39, 42, 20, 43, 25, 27, 28, 0, 26, 47, 46, 16, 11, 38, 24, 12, 35, 30, 21, 15, 36, 51, 34, 32, 41, 18, 23, 22, 37, 3, 7, 45, 19, 40, 44, 48, 50, 6, 13, 8, 33, 9, 49, 2, 10, 5, 17, 4, 29, 1]
+
+Peças: [ O f n q U r Z b c A a v u Q L m Y M j e V P k z i g p S X W l D H t T o s w y G N I h J x C K F R E d B ]
+
+Matriz: 
+O O M M r r b b P P u u u j j j j G N N i p p p T w w w h x x x E                                                                                                                                                                                                                   
+O O M M r r b b P P u u u j j j j G N N i p p p T w w w h x x x E                                                                                                                                                                                                                   
+f n n n r r b b H H u u u V k k z z z z i p p p T w w w h x x x d                                                                                                                                                                                                                   
+f n n n r r L v v v u u u V k k z z z z i X l l T w w w h x x x d                                                                                                                                                                                                                   
+f n n n r r L v v v m m m V k k z z z z i X l l o o o J h x x x d                                                                                                                                                                                                                   
+f U U U U U L v v v m m m V k k z z z z i X l l o o o J h K K K d                                                                                                                                                                                                                   
+f A a a a Z Z v v v m m m V W W W W W C i X l l o o o J h F F R d                                                                                                                                                                                                                   
+f D a a a Z Z Q Q Q Q Y Y Y g g g g g g g X t t t t y y y y y R d                                                                                                                                                                                                                   
+q q q q q Z Z S S S S Y Y Y I I I s s s s s t t t t y y y y y R B                                                                                                                                                                                                                   
+q q q q q c c c c c c e e e e e e s s s s s t t t t y y y y y R                                                                                                                                                                                                                     
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(10)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Inversion mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 251.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 98.39999999999999
+
+Genoma: [12, 46, 21, 22, 50, 13, 17, 49, 7, 5, 18, 51, 45, 38, 48, 33, 3, 2, 10, 39, 32, 14, 43, 20, 42, 15, 35, 16, 44, 28, 8, 11, 23, 30, 24, 40, 47, 4, 26, 1, 36, 34, 31, 27, 19, 41, 6, 37, 29, 0, 9, 25]
+
+Peças: [ M u V W y N R x H F S z t m w h D C K n g O r U q P j Q s c I L X e Y o v E a B k i f b T p G l d A J Z ]
+
+Matriz: 
+M M D V N N O O z z z z w w w h r r j j j j e e e e e e i f p p p                                                                                                                                                                                                                   
+M M C V N N O O z z z z w w w h r r j j j j A o o o k k i f p p p                                                                                                                                                                                                                   
+u u u V R x x x z z z z w w w h r r s s s s s o o o k k i f p p p                                                                                                                                                                                                                   
+u u u V R x x x z z z z w w w h r r s s s s s o o o k k i f l l d                                                                                                                                                                                                                   
+u u u V R x x x t t t t K K K h r r I I I L X v v v k k i f l l d                                                                                                                                                                                                                   
+u u u B R x x x t t t t n n n h q q q q q L X v v v b b i f l l d                                                                                                                                                                                                                   
+W W W W W x x x t t t t n n n h q q q q q L X v v v b b i T l l d                                                                                                                                                                                                                   
+y y y y y H H P P m m m n n n Q Q Q Q Y Y Y X v v v b b J T Z Z d                                                                                                                                                                                                                   
+y y y y y F F P P m m m g g g g g g g Y Y Y X E a a a G J T Z Z d                                                                                                                                                                                                                   
+y y y y y S S S S m m m U U U U U c c c c c c E a a a G J T Z Z                                                                                                                                                                                                                     

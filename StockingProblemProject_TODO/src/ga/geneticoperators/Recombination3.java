@@ -17,14 +17,24 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
         //TODO Cycle Crossover
         int[] child1 = new int[ind1.getNumGenes()];
         int[] child2 = new int[ind1.getNumGenes()];
-        boolean[] positions = new boolean[ind1.getNumGenes()];
-        int[][] cycles = new int[ind1.getNumGenes()][ind1.getNumGenes()];
+        boolean[][] positions = new boolean[2][ind1.getNumGenes()];
+        int[][] cycles = new int[Integer.MAX_VALUE][ind1.getNumGenes()];
         int nrCycles=0;
 
-        for (int i = 0; i < positions.length; i++) {
-            if(!positions[i]) // positions[i] == false
+        for (int i = 0; i < positions[0].length; i++) {
+            if(!positions[0][i]) // positions[i] == false
             {
-                cycles[nrCycles] = getcycle(ind1, ind2, cycles[i], positions, i);
+                cycles[nrCycles] = getcycle(ind1, ind2, cycles[i], positions[0], i);
+                nrCycles++;
+            }
+
+        }
+
+        for (int i = 0; i < positions[1].length; i++) {
+
+            if(!positions[1][i]) // positions[i] == false
+            {
+                cycles[nrCycles] = getcycle(ind2, ind1, cycles[i], positions[1], i);
                 nrCycles++;
             }
 
