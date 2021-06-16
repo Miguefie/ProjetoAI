@@ -1,0 +1,496 @@
+
+
+Population size:50
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 290.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 105.2
+
+Genoma: [43, 46, 30, 23, 19, 48, 8, 49, 22, 10, 9, 2, 31, 5, 42, 41, 51, 28, 21, 13, 39, 36, 12, 6, 20, 35, 17, 27, 3, 26, 37, 24, 38, 40, 16, 33, 47, 32, 15, 29, 50, 1, 25, 18, 45, 44, 14, 7, 34, 0, 4, 11]
+
+Peças: [ r u e X T w I x W K J C f F q p z c V N n k M G U j R b D a l Y m o Q h v g P d y B Z S t s O H i A E L ]
+
+Matriz: 
+r r r w w w   F z   z G G j   a a   Q P P P t t t L                                                                                                                                                                                                               
+r B r w C w   F z z z G G j j a a Q Q Q d P t     L                                                                                                                                                                                                               
+r r r w C w K F p z N N N j j Y Y h h g g d t t t L                                                                                                                                                                                                               
+u u u I I K K p p p   N k R Y Y Y h h g d d s s s L                                                                                                                                                                                                               
+D D u x I   f f p p   k k R R R m m h g g y s   s                                                                                                                                                                                                                 
+u u u x x x f f V V V k k b b l m m m y y y s s s                                                                                                                                                                                                                 
+e e T T T x f   V c V n n b l l l m v y v Z Z O O O                                                                                                                                                                                                               
+e e T T   J q   q c n n n   b l o   v   v Z   O i i                                                                                                                                                                                                               
+X A X W W J J q c c   n U U U o o o v v v Z S H H i                                                                                                                                                                                                               
+X X X W W W q   q M M M M U U o o E E E S S S H i i                                                                                                                                                                                                               
+
+
+Population size:50
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 286.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 104.0
+
+Genoma: [38, 26, 45, 12, 34, 40, 10, 2, 17, 49, 7, 20, 47, 18, 46, 48, 32, 22, 23, 6, 30, 16, 13, 28, 21, 19, 51, 42, 50, 4, 11, 44, 31, 29, 5, 15, 35, 37, 14, 43, 1, 41, 33, 25, 9, 39, 36, 8, 24, 27, 3, 0]
+
+Peças: [ m a t M i o K C R x H U v S u w g W X G e Q N c V T z q y E L s f d F P j l O r B p h Z J n k I Y b D A ]
+
+Matriz: 
+m m i i R P P P w w w   N N N   b b f f F r r r Z Z                                                                                                                                                                                                               
+m m m i R R R P w c w e e N   q b q f f F r   r Z                                                                                                                                                                                                                 
+B m i i o U U U w c w e e T T T q b f   F r r r Z k                                                                                                                                                                                                               
+a a C o o o U U c c g g Q T T q L q     j   h h k k                                                                                                                                                                                                               
+a a C o o G G v   v g Q Q Q I I L s s s j j h h k k                                                                                                                                                                                                               
+t t t K x G G v   v g g V V V I L s   s j j p h                                                                                                                                                                                                                   
+t A K K x x x v v v W W V z V z L s s s l p p p                                                                                                                                                                                                                   
+t t t   H H x u u u W W W z z z   y d l l l p p n n                                                                                                                                                                                                               
+M M M M H S O O O u X   X J z y y y   d l Y Y n n n                                                                                                                                                                                                               
+E E E S S S O u u u X X X J J y D D d d Y Y Y   n                                                                                                                                                                                                                 
+
+
+Population size:50
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 280.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 102.2
+
+Genoma: [43, 46, 30, 23, 19, 48, 8, 49, 22, 50, 2, 25, 9, 5, 42, 41, 51, 28, 21, 13, 39, 36, 12, 6, 20, 35, 17, 27, 26, 3, 37, 24, 40, 38, 16, 34, 47, 32, 15, 33, 10, 1, 31, 18, 45, 44, 14, 7, 29, 0, 4, 11]
+
+Peças: [ r u e X T w I x W y C Z J F q p z c V N n k M G U j R b a D l Y o m Q i v g P h K B f S t s O H d A E L ]
+
+Matriz: 
+r r r w w w Z Z p N N N U U U m m i i g g K t t t                                                                                                                                                                                                                 
+r B r w C w Z p p p N n n U U m m m i g K K t                                                                                                                                                                                                                     
+r r r w C w Z y p p n n n b b l m i i g g   t t t                                                                                                                                                                                                                 
+u u u I I y y y V V V n j b l l l Q   L h h s s s                                                                                                                                                                                                                 
+D D u x I y F z V z V k j j b l Q Q Q L h h s   s                                                                                                                                                                                                                 
+u u u x x x F z z z k k j j Y Y     v L v h s s s                                                                                                                                                                                                                 
+e e T T T x F   z c k k R Y Y Y o   v L v f f O O O                                                                                                                                                                                                               
+e e T T   J q   q c G G R R R o o o v v v f f O d                                                                                                                                                                                                                 
+X A X W W J J q c c G G   a a o o P P P   f S H H d                                                                                                                                                                                                               
+X X X W W W q   q M M M M a a E E E   P S S S H d d                                                                                                                                                                                                               
+
+
+Population size:50
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 275.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 100.7
+
+Genoma: [13, 35, 50, 22, 51, 25, 36, 46, 43, 21, 9, 15, 23, 5, 8, 45, 14, 10, 47, 20, 27, 17, 48, 6, 1, 41, 44, 19, 11, 30, 31, 42, 4, 33, 32, 34, 18, 29, 24, 39, 16, 37, 26, 49, 38, 7, 28, 3, 12, 40, 0, 2]
+
+Peças: [ N j y W z Z k u r V J P X F I t O K v U b R w G B p s T L e f q E h g i S d Y n Q l a x m H c D M o A C ]
+
+Matriz: 
+N N N V V V X   X U U U a a s s s h h     S   H H                                                                                                                                                                                                                 
+j N z V z V X X X   U U a a s   s h h S S S l H                                                                                                                                                                                                                   
+j j z z z P P P O O O w w w s s s   h     l l l o                                                                                                                                                                                                                 
+j j y z u u u P O K v w v w e e f f g g Y Y l o o o                                                                                                                                                                                                               
+y y y Z Z A u F K K v w v w e e f f g Y Y Y x o o                                                                                                                                                                                                                 
+y I I Z u u u F G G v v v T T T f C g g n n x x x                                                                                                                                                                                                                 
+W W I Z r r r F G G b b p T T L q C q n n n m m x                                                                                                                                                                                                                 
+W W W k r   r t t t b p p p c L d q i i n Q m m m                                                                                                                                                                                                                 
+J B k k r r r t D D R b p p c L q d q i Q Q Q m                                                                                                                                                                                                                   
+J J k k E E E t t t R R R c c L d d i i M M M M                                                                                                                                                                                                                   
+
+
+Population size:100
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 288.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 104.6
+
+Genoma: [5, 30, 39, 51, 34, 15, 0, 32, 50, 47, 19, 11, 48, 4, 23, 31, 37, 44, 14, 40, 36, 28, 18, 27, 20, 22, 49, 26, 38, 9, 16, 33, 25, 42, 43, 35, 7, 6, 2, 3, 13, 29, 1, 24, 45, 21, 46, 41, 10, 12, 17, 8]
+
+Peças: [ F e n z i P A g y v T L w E X f l s O o k c S b U W x a m J Q h Z q r j H G C D N d B Y t V u p K M R I ]
+
+Matriz: 
+F i i g g T T T O O O k b b a a h h r r r t t t p                                                                                                                                                                                                                 
+F   i g   T T X O X k k b   a a h h r   r t   p p p                                                                                                                                                                                                               
+F i i g g C L X X X k k   b   m m h r r r t t t p p                                                                                                                                                                                                               
+e e P P P C L f f s s s U U U m m m H H G G V V V                                                                                                                                                                                                                 
+e e D D P y L f f s   s c U U Q m   H   G G V   V                                                                                                                                                                                                                 
+A n n y y y L f l s s s c x Q Q Q q   q     R u u u                                                                                                                                                                                                               
+n n n y w w w l l l o c c x x x Z Z q N N N R R R u                                                                                                                                                                                                               
+z n z v w v w J l o o o W W d x Z q j q N Y Y u u u                                                                                                                                                                                                               
+z z z v w v w J J o o S W W W d Z K j j Y Y Y I I                                                                                                                                                                                                                 
+B z   v v v E E E S S S     d d K K j j M M M M I                                                                                                                                                                                                                 
+
+
+Population size:100
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 282.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 102.8
+
+Genoma: [31, 40, 43, 46, 39, 29, 33, 23, 14, 25, 48, 51, 10, 34, 49, 30, 18, 0, 6, 9, 19, 36, 38, 22, 44, 35, 32, 1, 11, 20, 47, 50, 21, 42, 17, 5, 15, 13, 3, 7, 45, 37, 12, 16, 24, 27, 41, 28, 4, 26, 8, 2]
+
+Peças: [ f o r u n d h X O Z w z K i x e S A G J T k m W s j g B L U v y V q R F P N D H t l M Q Y b p c E a I C ]
+
+Matriz: 
+f f u u u O O O i i T T T s s s L V V V t t t Y Y                                                                                                                                                                                                                 
+f f D D u O N N N i T T k s   s L V   V t   Y Y Y                                                                                                                                                                                                                 
+f o u u u Z Z N i i C k k s s s L q   q t t t p I I                                                                                                                                                                                                               
+o o o n n Z w w w x C k k U U U L   q P P P p p p I                                                                                                                                                                                                               
+o o n n n Z w F w x x x m m U U v q v q   P Q p p                                                                                                                                                                                                                 
+r r r n h h w F w G G x m m m   v   v R   Q Q Q c                                                                                                                                                                                                                 
+r A r d h h z F z G G S j m g g v v v R R R b b c                                                                                                                                                                                                                 
+r r r   d h z z z S S S j j g       y H H l b c c                                                                                                                                                                                                                 
+X B X d d K J z e e W W j j g g y y y H l l l b a a                                                                                                                                                                                                               
+X X X   K K J J e e W W W E E E y M M M M l     a a                                                                                                                                                                                                               
+
+
+Population size:100
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 277.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 101.3
+
+Genoma: [21, 42, 49, 23, 1, 17, 27, 14, 18, 22, 29, 28, 4, 30, 50, 26, 13, 2, 38, 6, 36, 48, 40, 41, 45, 34, 46, 8, 7, 15, 32, 51, 39, 35, 44, 33, 37, 12, 3, 16, 9, 25, 5, 19, 24, 11, 47, 43, 20, 31, 10, 0]
+
+Peças: [ V q x X B R b O S W d c E e y a N C m G k w o p t i u I H P g z n j s h l M D Q J Z F T Y L v r U f K A ]
+
+Matriz: 
+V V V b b d   a a G G     p P P P   s s s Z Z r r r                                                                                                                                                                                                               
+V C V b D D d a a G G   p p p z P z s   s Z L r   r                                                                                                                                                                                                               
+q C q   b d d N N N w w w p p z z z s s s Z L r r r                                                                                                                                                                                                               
+B q A O O O e e N   w F w t t t z j   h h v L v                                                                                                                                                                                                                   
+q R q O H H e e m m w F w t u u u j j h h v L v                                                                                                                                                                                                                   
+x R R R H S c J m m m F o t t t u j j l h v v v                                                                                                                                                                                                                   
+x x x S S S c J J m k o o o u u u   l l l Y Y f f                                                                                                                                                                                                                 
+I I x W W c c   y k k o o i i g g n n l Y Y Y f f                                                                                                                                                                                                                 
+X I X W W W y y y k k T T T i g n n n Q U U U f K                                                                                                                                                                                                                 
+X X X E E E y M M M M T T i i g g n Q Q Q U U K K                                                                                                                                                                                                                 
+
+
+Population size:100
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 275.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 100.7
+
+Genoma: [43, 27, 42, 36, 15, 11, 22, 29, 33, 32, 51, 17, 24, 46, 40, 8, 3, 41, 44, 21, 49, 31, 7, 50, 18, 28, 37, 23, 34, 38, 25, 20, 10, 39, 35, 48, 16, 6, 19, 47, 1, 26, 9, 13, 30, 2, 12, 14, 5, 4, 45, 0]
+
+Peças: [ r b q k P L W d h g z R Y u o I D p s V x f H y S c l X i m Z U K n j w Q G T v B a J N e C M O F E t A ]
+
+Matriz: 
+r r r L d   u u u V V V G G c m m U U U T T T F                                                                                                                                                                                                                   
+r A r L   d D D u V x V G G c m m m U U T T   F                                                                                                                                                                                                                   
+r r r L d d u u u o x x x c c l m Z Z Q N N N F                                                                                                                                                                                                                   
+b b   L g g Y Y o o o K x   l l l Z Q Q Q N e e                                                                                                                                                                                                                   
+b P P P g Y Y Y o o K K f f X l X Z n n a a e e                                                                                                                                                                                                                   
+q b q P g g C I I s s s f f X X X n n n a a O O O                                                                                                                                                                                                                 
+B q   h h z C z I s   s f   y i i j n w w w O E E E                                                                                                                                                                                                               
+q k q h h z z z p s s s y y y   i j j w v w v t t t                                                                                                                                                                                                               
+k k W W h R z p p p H H y S J i i j j w v w v t                                                                                                                                                                                                                   
+k k W W W R R R p p H S S S J J M M M M v v v t t t                                                                                                                                                                                                               
+
+
+Population size:200
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 279.0
+
+TamanhoMaxPeça: 27.0
+
+Fitness: 102.6
+
+Genoma: [32, 35, 7, 47, 42, 9, 34, 33, 14, 15, 23, 3, 21, 0, 51, 38, 40, 11, 27, 43, 10, 24, 1, 30, 22, 4, 48, 45, 46, 44, 5, 49, 16, 17, 50, 8, 37, 18, 29, 20, 6, 13, 41, 39, 26, 31, 28, 36, 19, 2, 12, 25]
+
+Peças: [ g j H v q J i h O P X D V A z m o L b r K Y B e W E w t u s F x Q R y I l S d U G N p n a f c k T C M Z ]
+
+Matriz: 
+g g C i i X   X b b K W W I I s s s U U U   n n c                                                                                                                                                                                                                 
+g q C q i X X X b K K W W W I s   s   U U n n n c                                                                                                                                                                                                                 
+g g q i i     m m b e e w w w s s s   S G G n c c                                                                                                                                                                                                                 
+j q J q O O O m m m e e w   w F x S S S G G f f                                                                                                                                                                                                                   
+j j J J O V V V m r r r w   w F x x x N N N f f k                                                                                                                                                                                                                 
+j j L h h V z V z r   r t t t F Z Z x y N p f k k                                                                                                                                                                                                                 
+H H L h h   z z z r r r t u u u Z y y y p p p k k                                                                                                                                                                                                                 
+H v L v h     z o E E E t t t u Z y l d   p p T T T                                                                                                                                                                                                               
+A v L v P P P o o o Y Y R u u u Q l l l d a a T T                                                                                                                                                                                                                 
+B v v v D D P o o Y Y Y R R R Q Q Q l d d a a M M M M                                                                                                                                                                                                             
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 276.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 101.0
+
+Genoma: [44, 13, 49, 11, 21, 41, 31, 20, 0, 36, 23, 30, 14, 10, 22, 28, 26, 6, 12, 1, 32, 47, 46, 9, 8, 50, 42, 17, 33, 5, 18, 48, 3, 43, 34, 35, 27, 25, 4, 19, 16, 45, 38, 37, 51, 15, 29, 39, 40, 7, 2, 24]
+
+Peças: [ s N x L V p f U A k X e O K W c a G M B g v u J I y q R h F S w D r i j b Z E T Q t m l z P d n o H C Y ]
+
+Matriz: 
+s s s f f D D K a a g g b b h h r r r T T T H H                                                                                                                                                                                                                   
+s A s f f k K K a a g q b q h h r   r T T z H z                                                                                                                                                                                                                   
+s s s f k k W W I I g g q b F h r r r m m z z z o                                                                                                                                                                                                                 
+N N N p k k W W W I v q v q F C i i j m m m z o o o                                                                                                                                                                                                               
+x N p p p e e c G G v   v R F C   i j j m l d o o                                                                                                                                                                                                                 
+x x x p p e e c G G v v v R R R i i j j l l l d                                                                                                                                                                                                                   
+L B x U U U c c u u u J P P P w w w Z Z   l d d                                                                                                                                                                                                                   
+L V V V U U M M M M u J J y P w   w Z t t t n n                                                                                                                                                                                                                   
+L V X V X O O O u u u y y y S w Q w Z t   n n n Y Y                                                                                                                                                                                                               
+L   X X X O E E E     y S S S Q Q Q   t t t n Y Y Y                                                                                                                                                                                                               
+
+
+Population size:200
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 273.0
+
+TamanhoMaxPeça: 25.0
+
+Fitness: 99.39999999999999
+
+Genoma: [17, 7, 33, 23, 28, 34, 11, 24, 38, 42, 29, 50, 9, 2, 35, 3, 48, 36, 6, 26, 0, 15, 4, 31, 21, 1, 37, 51, 44, 13, 19, 39, 47, 45, 46, 27, 16, 18, 40, 30, 41, 43, 32, 14, 25, 12, 49, 22, 8, 20, 10, 5]
+
+Peças: [ R H h X c i L Y m q d y J C j D w k G a A P E f V B l z s N T n v t u b Q S o e p r g O Z M x W I U K F ]
+
+Matriz: 
+R D D c m m   w w w V V V T T T Z Z b b p M M M M                                                                                                                                                                                                                 
+R R R c m m m w   w V K V T T v Z v b p p p W W                                                                                                                                                                                                                   
+H H c c q m q w k w K K s s s v Z v x b p p W W W                                                                                                                                                                                                                 
+H B i i d q   k k P P P s   s v v v x x x r r r F                                                                                                                                                                                                                 
+h h   i q d q k k f f P s s s   t t t S x r   r F                                                                                                                                                                                                                 
+h h i i d d y G G f f l N N N   t S S S o r r r F                                                                                                                                                                                                                 
+X h X L y y y G G f l l l N n n t t t o o o I I                                                                                                                                                                                                                   
+X X X L y C j   a a z l z n n n u u u o o g g I                                                                                                                                                                                                                   
+A Y Y L J C j j a a z z z Q n O O O u e e g U U U                                                                                                                                                                                                                 
+Y Y Y L J J j j E E E z Q Q Q O u u u e e g g U U                                                                                                                                                                                                                 
+
+
+Population size:200
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 268.0
+
+TamanhoMaxPeça: 25.0
+
+Fitness: 97.89999999999999
+
+Genoma: [12, 44, 43, 48, 31, 7, 47, 39, 1, 40, 0, 34, 3, 33, 35, 41, 49, 15, 28, 11, 10, 6, 32, 30, 26, 50, 46, 19, 36, 42, 18, 38, 51, 22, 25, 5, 45, 14, 20, 23, 17, 21, 4, 37, 13, 24, 29, 2, 16, 27, 9, 8]
+
+Peças: [ M s r w f H v n B o A i D h j p x P c L K G g e a y u T k q S m z W Z F t O U X R V E l N Y d C Q b J I ]
+
+Matriz: 
+M M M M I I h h j     c g g u u u m m U U U N N N                                                                                                                                                                                                                 
+s s s f f I h h j j   c g E E E u m m m U U l N                                                                                                                                                                                                                   
+s B s f f n n h j j c c g g u u u F m W W l l l                                                                                                                                                                                                                   
+s s s f n n n o P P P L e e T T T F d W W W l                                                                                                                                                                                                                     
+r r r H H n o o o p P L e e T T q F q d t t t Y Y                                                                                                                                                                                                                 
+r A r H Z Z o o p p p L a a O O O q d d t   Y Y Y                                                                                                                                                                                                                 
+r r r v Z v i i x p p L a a O y q z q z t t t b b                                                                                                                                                                                                                 
+w w w v Z v   i x x x G G y y y k z z z V V V b                                                                                                                                                                                                                   
+w C w v v v i i K R x G G y S k k X z X V Q V J b                                                                                                                                                                                                                 
+w C w D D     K K R R R S S S k k X X X Q Q Q J J                                                                                                                                                                                                                 
+
+
+Population size:400
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 283.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 103.1
+
+Genoma: [45, 30, 31, 6, 20, 49, 39, 23, 16, 28, 14, 18, 42, 26, 47, 48, 36, 15, 34, 8, 22, 33, 25, 24, 19, 43, 2, 7, 44, 5, 32, 38, 0, 13, 9, 11, 41, 21, 35, 51, 37, 1, 3, 40, 17, 27, 50, 12, 29, 4, 46, 10]
+
+Peças: [ t e f G U x n X Q c O S q a v w k P i I W h Z Y T r C H s F g m A N J L p V j z l B D o R b y M d E u K ]
+
+Matriz: 
+t t t n n O O O v   v h h r r r m m   V V V E E E y                                                                                                                                                                                                               
+t A n n n O   S v   v h h r   r m m m V z V z y y y                                                                                                                                                                                                               
+t t t n Q S S S v v v F h r r r J m L j z z z y                                                                                                                                                                                                                   
+e e x Q Q Q a a P P P F Z Z H H J J L j j z R u u u                                                                                                                                                                                                               
+e e x x x   a a I I P F Z   H s s s L j j l R R R u                                                                                                                                                                                                               
+f f C X x X w w w I i i Z Y Y s   s L p l l l u u u                                                                                                                                                                                                               
+f f C X X X w   w D D i Y Y Y s s s p p p l b b                                                                                                                                                                                                                   
+f U U U c q w q w k i i T T T g g   d p p o b                                                                                                                                                                                                                     
+G G U U c   q   k k W W T T K g N N N d o o o b                                                                                                                                                                                                                   
+G G B c c q   q k k W W W K K g g N d d o o M M M M                                                                                                                                                                                                               
+
+
+Population size:400
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 276.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 101.0
+
+Genoma: [31, 37, 43, 46, 39, 29, 33, 11, 14, 25, 48, 51, 10, 34, 49, 30, 18, 6, 4, 19, 9, 32, 38, 22, 3, 35, 42, 1, 23, 15, 41, 50, 21, 27, 17, 5, 20, 24, 45, 7, 44, 26, 36, 16, 13, 0, 47, 28, 40, 12, 8, 2]
+
+Peças: [ f l r u n d h L O Z w z K i x e S G E T J g m W D j q B X P p y V b R F U Y t H s a k Q N A v c o M I C ]
+
+Matriz: 
+f f u u u L Z Z i i T T T q   q V V V t t t Q                                                                                                                                                                                                                     
+f f D D u L Z H H i T T g g q   V   V t   Q Q Q                                                                                                                                                                                                                   
+f l u u u L Z H i i a a g q X q X b b t t t N N N                                                                                                                                                                                                                 
+l l l n n L w w w x a a g g X X X b I I s s s N o                                                                                                                                                                                                                 
+B l n n n   w F w x x x m m P P P R b I s   s o o o                                                                                                                                                                                                               
+r r r n h h w F w G G x m m m p P R R R s s s o o                                                                                                                                                                                                                 
+r A r d h h z F z G G S j m p p p U U U   k v C v                                                                                                                                                                                                                 
+r r r   d h z z z S S S j j c p p y U U k k v C v                                                                                                                                                                                                                 
+O O O d d K J z e e W W j j c y y y Y Y k k v v v                                                                                                                                                                                                                 
+O E E E K K J J e e W W W c c y   Y Y Y M M M M                                                                                                                                                                                                                   
+
+
+Population size:400
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 272.0
+
+TamanhoMaxPeça: 26.0
+
+Fitness: 99.8
+
+Genoma: [43, 46, 30, 19, 48, 10, 49, 11, 34, 31, 21, 9, 25, 42, 41, 51, 28, 47, 13, 38, 36, 22, 23, 20, 35, 17, 27, 3, 26, 39, 24, 37, 40, 16, 32, 2, 33, 5, 45, 29, 4, 1, 14, 18, 15, 44, 50, 7, 8, 0, 12, 6]
+
+Peças: [ r u e T w K x L i f V J Z q p z c v N m k W X U j R b D a n Y l o Q g C h F t d E B O S P s y H I A M G ]
+
+Matriz: 
+r r r w w w V V V   c m m U U U P P P g g O O O y                                                                                                                                                                                                                 
+r B r w A w V q V q c m m m U U Y Y P g d O y y y                                                                                                                                                                                                                 
+r r r w J w Z Z q c c   m k R Y Y Y l g g d y H H                                                                                                                                                                                                                 
+u u u x J J Z q C q F   k k R R R l l l d d   H                                                                                                                                                                                                                   
+D D u x x x Z p C v F v k k b b n n l h h s s s                                                                                                                                                                                                                   
+u u u K L x p p p v F v W W b n n n o h h s   s                                                                                                                                                                                                                   
+e e K K L f f p p v v v W W W b n o o o h s s s                                                                                                                                                                                                                   
+e e i i L f f z   z N N N j   a a o o t t t S G G                                                                                                                                                                                                                 
+T T T i L f Q z z z X N X j j a a I I t S S S G G                                                                                                                                                                                                                 
+T T i i   Q Q Q z   X X X j j E E E I t t t M M M M                                                                                                                                                                                                               
+
+
+Population size:400
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 270.0
+
+TamanhoMaxPeça: 25.0
+
+Fitness: 98.5
+
+Genoma: [34, 43, 48, 21, 47, 10, 19, 50, 9, 14, 37, 13, 6, 38, 41, 46, 25, 3, 0, 28, 20, 5, 23, 44, 51, 36, 11, 12, 49, 22, 42, 29, 45, 17, 31, 39, 26, 4, 40, 33, 24, 7, 18, 35, 32, 30, 15, 8, 16, 2, 27, 1]
+
+Peças: [ i r w V v K T y J O l N G m p u Z D A c U F X s z k L M x W q d t R f n a E o h Y H S j g e P I Q C b B ]
+
+Matriz: 
+i i V V V   l P P P Z Z H H z   z f f C h h j I I                                                                                                                                                                                                                 
+A i V K V l l l p P Z X H X z z z f f C h h j j I                                                                                                                                                                                                                 
+i i K K D D l p p p Z X X X k z q f q n n h j j                                                                                                                                                                                                                   
+r r r T T T G G p p U U U k k L d q n n n Y Y b b                                                                                                                                                                                                                 
+r   r T T y G G u u u U U k k L q d q n Y Y Y b                                                                                                                                                                                                                   
+r r r y y y M M M M u F s s s L d d t t t S g g b                                                                                                                                                                                                                 
+w w w y J N N N u u u F s   s L a a t S S S g                                                                                                                                                                                                                     
+w v w v J J N m m   c F s s s x a a t t t o g g                                                                                                                                                                                                                   
+w v w v O O O m m m c W W   R x x x e e o o o Q                                                                                                                                                                                                                   
+B v v v O E E E m c c W W W R R R x e e o o Q Q Q                                                                                                                                                                                                                 

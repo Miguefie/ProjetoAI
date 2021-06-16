@@ -8,8 +8,7 @@ Max_generations: 50
 
 Selection: tournament
 
-Tournament_size: 10
-
+Tournament_size: 5
 //--------------------------------
 
 Recombination: order

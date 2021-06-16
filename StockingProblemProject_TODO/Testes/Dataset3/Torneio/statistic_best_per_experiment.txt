@@ -5,27 +5,27 @@ Max generations:50
 Selection:Tournament(2)
 Recombination:Order recombination (0.6)
 Recombination prob.: 0.6
-Mutation:Inversion mutation (0.2)
-Mutation prob.: 0.2
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
 
-NºCortes: 307.0
+NºCortes: 313.0
 
 TamanhoMaxPeça: 45.0
 
-Fitness: 123.6
+Fitness: 125.39999999999999
 
-Genoma: [51, 25, 38, 17, 6, 28, 39, 34, 42, 5, 18, 45, 47, 41, 37, 24, 10, 44, 40, 22, 30, 13, 50, 29, 32, 27, 16, 26, 48, 43, 12, 9, 3, 35, 7, 11, 8, 4, 36, 49, 0, 23, 2, 21, 15, 31, 1, 20, 14, 19, 33, 46]
+Genoma: [38, 49, 50, 45, 37, 20, 8, 48, 14, 30, 6, 12, 25, 26, 10, 16, 36, 35, 15, 1, 11, 41, 32, 22, 23, 27, 39, 28, 0, 29, 4, 18, 34, 44, 33, 5, 42, 43, 24, 3, 21, 2, 7, 9, 51, 13, 17, 31, 19, 46, 47, 40]
 
-Peças: [ z Z m R G c n i q F S t v p l Y K s o W e N y d g b Q a w r M J D j H L I E k x A X C V P f B U O T h u ]
+Peças: [ m x y t l U I w O e G M Z a K Q k j P B L p g W X b n c A d E S i s h F q r Y D V C H J z N R f T u v o ]
 
 Matriz: 
-z V z R R   Y Y c S   S p   j l W W W W W W N Q Q Q   d   w   J J J a a   h h h h h U u                                                                                                                                                                                                                                               
-z z z R R R Y Y c S S S p j j l W L e e N N N Q d Q d d w w w J   a a f f f f h h h U u u                                                                                                                                                                                                                                             
-A z i i m G c c c c D D p p l l L L L e e e d d d d d d x w     a a k k k k k k k k U u u                                                                                                                                                                                                                                             
-Z Z i i m G n n c t t v C p l l s s r o o e e E E E g g x x x a a I I I X X O O O   U U                                                                                                                                                                                                                                               
-F Z B m m G n n   t v v C l l s s s r r o e e y g g g g b b x a a   I   X X O O T T   U                                                                                                                                                                                                                                               
-F Z Z m m G n n q t v v M l K K K o r r o y y y g g g b b b b b a a P P P X X     T T T                                                                                                                                                                                                                                               
-F m m m m q q q q q q q M M M   K o o o o y     g g H H H H b b a a a P P X X         T                                                                                                                                                                                                                                               
+B V y m x E E E U O O O   G Z Z Y Y   a a W W W W W W b b f f f f c S   S     T T       v                                                                                                                                                                                                                                             
+y y y m x x x l U O O i i G p Z Y Y a a   W H H H H b b b b b     c S S S   q   T T T v v                                                                                                                                                                                                                                             
+y j m m t t x l U e e i i G p Z Z a a k k k k k k k k   F b b c c c c q q q q q q q T v v                                                                                                                                                                                                                                             
+j j m m t C l l U U e e e G p p a a Q Q Q J J J g g X X F n n R R c h h h h h z   z u o o                                                                                                                                                                                                                                             
+m m m m t C l l w U     e e   p a a Q   Q J g g g g X X F n n R R R d r h h h z z z u u o                                                                                                                                                                                                                                             
+I I I L   l l w w w M   e e K K K a a P P P g g g s s X X n n d   d d r r     N z o u u o                                                                                                                                                                                                                                             
+A I L L L l D D w   M M M       K a a a P P g g s s s X X d d d d d d r r N N N   o o o o                                                                                                                                                                                                                                             
 
 
 Population size:200
@@ -33,27 +33,27 @@ Max generations:50
 Selection:Tournament(5)
 Recombination:Order recombination (0.6)
 Recombination prob.: 0.6
-Mutation:Inversion mutation (0.2)
-Mutation prob.: 0.2
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
 
-NºCortes: 301.0
+NºCortes: 293.0
 
 TamanhoMaxPeça: 44.0
 
-Fitness: 121.1
+Fitness: 118.69999999999999
 
-Genoma: [25, 0, 32, 24, 40, 22, 51, 46, 17, 19, 42, 6, 1, 45, 35, 15, 29, 28, 31, 48, 13, 30, 26, 50, 49, 8, 20, 43, 33, 12, 39, 44, 34, 14, 27, 2, 38, 16, 18, 3, 41, 36, 10, 23, 21, 7, 9, 4, 37, 11, 47, 5]
+Genoma: [39, 47, 11, 30, 49, 8, 10, 41, 50, 42, 17, 15, 32, 45, 1, 9, 25, 5, 23, 29, 37, 33, 4, 6, 34, 43, 13, 40, 24, 36, 20, 3, 51, 38, 7, 18, 16, 21, 22, 26, 31, 27, 2, 28, 46, 35, 19, 12, 44, 48, 0, 14]
 
-Peças: [ Z A g Y o W z u R T q G B t j P d c f w N e a y x I U r h M n s i O b C m Q S D p k K X V H J E l L v F ]
+Peças: [ n v L e x I K p y q R P g t B J Z F X d l h E G i r N o Y k U D z m H S Q V W a f b C c u j T M s w A O ]
 
 Matriz: 
-Z Z Y Y W W W W W W G t t f f f f d     y O O O a a U h h h h h Q Q Q     p X X J J J F                                                                                                                                                                                                                                               
-A Z Y Y W j z   z C G t     d   d d y y y O O a a v U M   h h h Q S Q S m p X X J   l F                                                                                                                                                                                                                                               
-B Z Z   j j z z z C G t d d d d d d y I I I a a v v U M M M   b b S S S m p p X X   l F                                                                                                                                                                                                                                               
-D D g g u o o z T T G P P P c   w e e   I a a x v v U U n n b b b b b m m   p X X l l                                                                                                                                                                                                                                                 
-g g g g u u o R R T T T P P c w w w e e e a a x x x r U n n K K K b b m m H H H H l l                                                                                                                                                                                                                                                 
-g g g o u u o R R R q T c c c c w N i i e e a a   x r r n n s s K m m m m E E E l l L                                                                                                                                                                                                                                                 
-g g V o o o o q q q q q q q c N N N i i e e a a a   r r   s s s k k k k k k k k l L L L                                                                                                                                                                                                                                               
+n n e e K K K p R R E E E g g X X Y Y l h h h h h o o U S   S W W W W W W a a s s c                                                                                                                                                                                                                                                   
+n n x e e e K p R R R g g g g X X Y Y l G r h h h j o U S S S W   O O O a a s s s c                                                                                                                                                                                                                                                   
+n n x x x e e p p i i g g g Z Z X X l l G r r o j j o U   Q Q Q m O O a a b b c c c c                                                                                                                                                                                                                                                 
+B v D D x e e F p i i g g     Z X X l l G r r o o o o U U Q   Q m   a a b b b b b c w                                                                                                                                                                                                                                                 
+v v I I I A y F P P P C t t   Z Z l l d G   N H H H H z U z   m m u a a T T   b b w w w                                                                                                                                                                                                                                               
+v v L I y y y F q P P C t J J J d l d d N N N f f f f z z z   m m u u a a T T T M   w                                                                                                                                                                                                                                                 
+V L L L y q q q q q q q t J d d d d d d k k k k k k k k z m m m m u u a a a   T M M M                                                                                                                                                                                                                                                 
 
 
 Population size:200
@@ -61,24 +61,24 @@ Max generations:50
 Selection:Tournament(10)
 Recombination:Order recombination (0.6)
 Recombination prob.: 0.6
-Mutation:Inversion mutation (0.2)
-Mutation prob.: 0.2
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
 
-NºCortes: 300.0
+NºCortes: 291.0
 
-TamanhoMaxPeça: 45.0
+TamanhoMaxPeça: 43.0
 
-Fitness: 121.5
+Fitness: 117.39999999999999
 
-Genoma: [48, 40, 22, 36, 25, 20, 45, 26, 51, 37, 27, 1, 33, 7, 5, 2, 9, 11, 30, 0, 28, 46, 43, 16, 41, 39, 6, 38, 50, 4, 29, 19, 49, 32, 47, 8, 24, 17, 42, 14, 13, 10, 15, 12, 23, 35, 44, 3, 21, 31, 18, 34]
+Genoma: [14, 19, 26, 22, 29, 43, 13, 18, 35, 12, 50, 16, 41, 27, 24, 42, 3, 8, 11, 23, 40, 28, 32, 30, 46, 15, 38, 21, 37, 6, 31, 48, 49, 1, 4, 25, 36, 5, 10, 33, 20, 7, 44, 45, 9, 17, 2, 51, 39, 47, 34, 0]
 
-Peças: [ w o W k Z U t a z l b B h H F C J L e A c u r Q p n G m y E d T x g v I Y R q O N K P M X j s D V f S i ]
+Peças: [ O T a W d r N S j M y Q p b Y q D I L X o c g e u P m V l G f w x B E Z k F K h U H s t J R C z n v i A ]
 
 Matriz: 
-B w o o Z Z C U t t j   a a h h h h h   c Q Q Q n n i i m T T f f f f g g O O O X X S   S                                                                                                                                                                                                                                             
-w w w o F Z C U t j j a a     l h h h   c Q p Q n n i i m x T T T g g g g O O   X X S S S                                                                                                                                                                                                                                             
-o w A o F Z Z U t V a a J J J l e e c c c c p   n n   m m x x x T g g g R R P P P X X                                                                                                                                                                                                                                                 
-o o o o F D D U U a a z J z l l u e e e c r p p G     m m     x   g g v R R R P P X X                                                                                                                                                                                                                                                 
-W W W W W W b b U a a z z z l l u u   e e r r p G m m m m y I I I d v v K K K M                                                                                                                                                                                                                                                       
-W H H H H b b b b b a a z l l L u u   e e r r N G Y Y y y y d I d d v v   q K M M M s s                                                                                                                                                                                                                                               
-k k k k k k k k b b a a a l L L L E E E   N N N G Y Y y d d d d d d q q q q q q q s s s                                                                                                                                                                                                                                               
+O O O Q Q Q A a a I I I d p Y Y P P P u o o J J J g g G x K K K m F Z Z   t t v U n n                                                                                                                                                                                                                                                 
+O O S Q S Q a a   d I d d p Y Y L P P u u o J g g g g G x x x K m F l Z   t v v U n n                                                                                                                                                                                                                                                 
+T T S S S a a d d d d d d p p L L L o u u o c g g g   G R R x m m F l Z Z t v v U n n                                                                                                                                                                                                                                                 
+r T T T a a W W W W W W y   p C X X o o o o c g g e e G R R R m m l l h h h h h U U                                                                                                                                                                                                                                                   
+r r V T a a W M D D y y y b b C X X     c c c c w   e e e m m m m l l     h h h z U z                                                                                                                                                                                                                                                 
+r r N B j a a M M M y q b b b b b X X E E E c w w w s s e e i i l l H H H H     z z z                                                                                                                                                                                                                                                 
+N N N j j a a a q q q q q q q b b X X f f f f   w s s s e e i i l k k k k k k k k z                                                                                                                                                                                                                                                   

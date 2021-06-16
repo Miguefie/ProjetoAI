@@ -1,0 +1,17 @@
+Population size:	Max generations:	Selection:	Recombination:	Recombination prob.:	Mutation:	Mutation prob.:		Fitness:	Seed:
+50	25	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		90.0	5
+50	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		90.0	5
+50	100	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		89.6	24
+50	200	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.1	16
+100	25	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		89.2	5
+100	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		89.2	5
+100	100	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.7	23
+100	200	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.7	23
+200	25	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.7	14
+200	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.7	9
+200	100	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.6	23
+200	200	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		87.6	23
+400	25	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		85.6	15
+400	50	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		84.9	15
+400	100	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		83.9	6
+400	200	Tournament(5)	Order recombination (0.6)	0.6	Swap mutation (0.3)	0.3		83.6	6

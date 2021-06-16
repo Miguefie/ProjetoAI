@@ -1,0 +1,448 @@
+
+
+Population size:50
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 216.0
+
+TamanhoMaxPeça: 36.0
+
+Fitness: 90.0
+
+Genoma: [12, 6, 0, 9, 11, 17, 14, 16, 24, 1, 18, 22, 2, 26, 23, 15, 25, 20, 19, 5, 4, 3, 21, 13, 10, 28, 27, 7, 8]
+
+Peças: [ M G A J L R O Q Y B S W C a X P Z U T F E D V N K c b H I ]
+
+Matriz: 
+G G M   T   J J B B P P P P Q Q W C a K K K c Z Z F F V V                                                                                                                                                                     
+G G M T T J J O O B B B Q Q Q Q W C a K K K c c Z F F   V V                                                                                                                                                                   
+M M M M J J L L O O O B Q Q Q W W C a a X Z c c Z   F F   V V                                                                                                                                                                 
+A A M J J L L L L L O O Q Q   W W C C a X Z Z Z Z   F F H H V V V V V                                                                                                                                                         
+Y Y D J J       L L O O I I W W N   C X X U U U U U U U U H     V V V V                                                                                                                                                       
+Y Y S S J J R R R R R   I N W N N     X X E E E E E E b   H H V V V                                                                                                                                                           
+Y Y S S J J J   R R R N N N N N N X X X X E     b b b b b b b V V                                                                                                                                                             
+
+
+Population size:50
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 216.0
+
+TamanhoMaxPeça: 36.0
+
+Fitness: 90.0
+
+Genoma: [12, 6, 0, 9, 11, 17, 14, 16, 24, 1, 18, 22, 2, 26, 23, 15, 25, 20, 19, 5, 4, 3, 21, 13, 10, 28, 27, 7, 8]
+
+Peças: [ M G A J L R O Q Y B S W C a X P Z U T F E D V N K c b H I ]
+
+Matriz: 
+G G M   T   J J B B P P P P Q Q W C a K K K c Z Z F F V V                                                                                                                                                                     
+G G M T T J J O O B B B Q Q Q Q W C a K K K c c Z F F   V V                                                                                                                                                                   
+M M M M J J L L O O O B Q Q Q W W C a a X Z c c Z   F F   V V                                                                                                                                                                 
+A A M J J L L L L L O O Q Q   W W C C a X Z Z Z Z   F F H H V V V V V                                                                                                                                                         
+Y Y D J J       L L O O I I W W N   C X X U U U U U U U U H     V V V V                                                                                                                                                       
+Y Y S S J J R R R R R   I N W N N     X X E E E E E E b   H H V V V                                                                                                                                                           
+Y Y S S J J J   R R R N N N N N N X X X X E     b b b b b b b V V                                                                                                                                                             
+
+
+Population size:50
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 217.0
+
+TamanhoMaxPeça: 35.0
+
+Fitness: 89.6
+
+Genoma: [9, 25, 11, 21, 15, 12, 16, 22, 3, 13, 18, 26, 4, 5, 27, 8, 7, 20, 10, 23, 28, 24, 1, 2, 17, 14, 0, 19, 6]
+
+Peças: [ J Z L V P M Q W D N S a E F b I H U K X c Y B C R O A T G ]
+
+Matriz: 
+D A A J J   V V   H H K K K M R R R R R W a F F U U U U U U U U                                                                                                                                                               
+I I J J Z Z c V V   H K K K M     R R R W a F F   Y Y   X B B                                                                                                                                                                 
+I J J S S Z c c V V H H M M M M   Q Q W W a a F F Y Y   X C B B B                                                                                                                                                             
+J J Z S S Z c c   V V V V V M Q Q Q Q W W   a F F Y Y X X C O O B                                                                                                                                                             
+J J Z Z Z Z L L       V V V V Q Q Q W W N E E E E E E X X C   O O O                                                                                                                                                           
+  J J     L L L L L V V V T   Q Q N W N N E     b X X X X C C G G O O                                                                                                                                                         
+  J J J P P P P L L V V T T   N N N N N N b b b b b b b     C G G O O                                                                                                                                                         
+
+
+Population size:50
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 211.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 87.1
+
+Genoma: [15, 5, 25, 4, 28, 23, 20, 16, 9, 24, 11, 26, 10, 3, 22, 18, 27, 21, 2, 7, 8, 14, 0, 1, 13, 17, 12, 19, 6]
+
+Peças: [ P F Z E c X U Q J Y L a K D W S b V C H I O A B N R M T G ]
+
+Matriz: 
+P P P P E E E E E E Q Q   J J T a G G W V V B B   O O R R R R R M                                                                                                                                                             
+F F A A E S S X Q Q Q Q J J T T a G G W C V V B B B O O O R R R M                                                                                                                                                             
+F F Z Z c S S X Q Q Q J J L L   a a W W C   V V   B     O O M M M M                                                                                                                                                           
+D F F Z c c X X Q Q J J L L L L L a W W C H H V V V V V O O     M                                                                                                                                                             
+Z F F Z c c X X Y Y J J   I I L L W W   C C H     V V V V     N                                                                                                                                                               
+Z Z Z Z X X X X Y Y   J J I K K K W     b C H H V V V   N   N N                                                                                                                                                               
+U U U U U U U U Y Y   J J J K K K b b b b b b b V V N N N N N N                                                                                                                                                               
+
+
+Population size:100
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 218.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 89.19999999999999
+
+Genoma: [16, 24, 9, 22, 26, 5, 25, 20, 0, 14, 12, 1, 21, 23, 17, 28, 4, 3, 8, 27, 2, 7, 11, 15, 13, 6, 10, 19, 18]
+
+Peças: [ Q Y J W a F Z U A O M B V X R c E D I b C H L P N G K T S ]
+
+Matriz: 
+A A Q Q   J J W a F F O O   B B   V V R R R R R E E E E E E L L                                                                                                                                                               
+Q Q Q Q J J   W a F F   O O O B B B V V   R R R E G G X C L L L L L                                                                                                                                                           
+Q Q Q J J   W W a a F F Z Z O O M B   V V P P P P G G X C K K K L L                                                                                                                                                           
+Q Q J J I I W W c a F F   Z O O M H H   V V V V V   X X C K K K S S                                                                                                                                                           
+Y Y J J I W W T c c Z     Z M M M M H       V V V V X X C C   N S S                                                                                                                                                           
+Y Y D J J W T T c c Z Z Z Z     M b H H   V V V X X X X N C N N                                                                                                                                                               
+Y Y   J J J U U U U U U U U b b b b b b b V V       N N N N N N                                                                                                                                                               
+
+
+Population size:100
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 218.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 89.19999999999999
+
+Genoma: [16, 24, 9, 22, 26, 5, 25, 20, 0, 14, 12, 1, 21, 23, 17, 28, 4, 3, 8, 27, 2, 7, 11, 15, 13, 6, 10, 19, 18]
+
+Peças: [ Q Y J W a F Z U A O M B V X R c E D I b C H L P N G K T S ]
+
+Matriz: 
+A A Q Q   J J W a F F O O   B B   V V R R R R R E E E E E E L L                                                                                                                                                               
+Q Q Q Q J J   W a F F   O O O B B B V V   R R R E G G X C L L L L L                                                                                                                                                           
+Q Q Q J J   W W a a F F Z Z O O M B   V V P P P P G G X C K K K L L                                                                                                                                                           
+Q Q J J I I W W c a F F   Z O O M H H   V V V V V   X X C K K K S S                                                                                                                                                           
+Y Y J J I W W T c c Z     Z M M M M H       V V V V X X C C   N S S                                                                                                                                                           
+Y Y D J J W T T c c Z Z Z Z     M b H H   V V V X X X X N C N N                                                                                                                                                               
+Y Y   J J J U U U U U U U U b b b b b b b V V       N N N N N N                                                                                                                                                               
+
+
+Population size:100
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 213.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 87.69999999999999
+
+Genoma: [25, 4, 21, 16, 10, 22, 14, 20, 12, 2, 23, 9, 5, 6, 19, 28, 17, 26, 1, 13, 3, 24, 27, 11, 7, 0, 18, 15, 8]
+
+Peças: [ Z E V Q K W O U M C X J F G T c R a B N D Y b L H A S P I ]
+
+Matriz: 
+G G Z Z V V U U U U U U U U Q Q W O O   B B P P P P J J H H S S                                                                                                                                                               
+G G T Z c V V R R R R R Q Q Q Q W C O O O B B B   J J Y Y H S S                                                                                                                                                               
+Z T T Z c c V V   R R R Q Q Q W W C F F O O X B J J a Y Y H H I I                                                                                                                                                             
+Z Z Z Z c c M V V V V V Q Q   W W C F F O O X J J   a Y Y L L I                                                                                                                                                               
+E E E E E E M     V V V V   W W N C C F F X X J J   a a L L L L L                                                                                                                                                             
+E K K K M M M M V V V     N W N N   C F F X X   J J   a     b L L                                                                                                                                                             
+D K K K A A M   V V   N N N N N N     X X X X   J J J b b b b b b b                                                                                                                                                           
+
+
+Population size:100
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 213.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 87.69999999999999
+
+Genoma: [25, 4, 21, 16, 10, 22, 14, 20, 12, 2, 23, 9, 5, 6, 19, 28, 17, 26, 1, 13, 3, 24, 27, 11, 7, 0, 18, 15, 8]
+
+Peças: [ Z E V Q K W O U M C X J F G T c R a B N D Y b L H A S P I ]
+
+Matriz: 
+G G Z Z V V U U U U U U U U Q Q W O O   B B P P P P J J H H S S                                                                                                                                                               
+G G T Z c V V R R R R R Q Q Q Q W C O O O B B B   J J Y Y H S S                                                                                                                                                               
+Z T T Z c c V V   R R R Q Q Q W W C F F O O X B J J a Y Y H H I I                                                                                                                                                             
+Z Z Z Z c c M V V V V V Q Q   W W C F F O O X J J   a Y Y L L I                                                                                                                                                               
+E E E E E E M     V V V V   W W N C C F F X X J J   a a L L L L L                                                                                                                                                             
+E K K K M M M M V V V     N W N N   C F F X X   J J   a     b L L                                                                                                                                                             
+D K K K A A M   V V   N N N N N N     X X X X   J J J b b b b b b b                                                                                                                                                           
+
+
+Population size:200
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 213.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 87.69999999999999
+
+Genoma: [22, 11, 2, 9, 25, 14, 19, 16, 17, 15, 12, 23, 6, 24, 8, 28, 0, 7, 21, 20, 13, 5, 27, 1, 10, 4, 18, 26, 3]
+
+Peças: [ W L C J Z O T Q R P M X G Y I c A H V U N F b B K E S a D ]
+
+Matriz: 
+D T W C G G I I J J O O     K K K M     c V V   E E E E E E N a                                                                                                                                                               
+T T W C G G I J J Z Z O O O K K K M   X c c V V E     N   N N a                                                                                                                                                               
+  W W C A A J J S S Z Y Y O O M M M M X c c   V V N N N N N N a a                                                                                                                                                             
+  W W C C J J Z S S Z Y Y O O Q Q M X X H H F F V V V V V B B   a                                                                                                                                                             
+W W L L C J J Z Z Z Z Y Y Q Q Q Q   X X   H F F     V V V V B B B                                                                                                                                                             
+W L L L L L J J R R R R R Q Q Q X X X X   H H F F V V V     b   B                                                                                                                                                             
+P P P P L L J J J   R R R Q Q U U U U U U U U F F V V b b b b b b b                                                                                                                                                           
+
+
+Population size:200
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 213.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 87.69999999999999
+
+Genoma: [5, 22, 2, 18, 23, 10, 25, 16, 24, 9, 28, 15, 19, 11, 0, 6, 1, 8, 14, 3, 20, 27, 17, 7, 21, 12, 13, 26, 4]
+
+Peças: [ F W C S X K Z Q Y J c P T L A G B I O D U b R H V M N a E ]
+
+Matriz: 
+F F S S W K K K Z Z c P P P P J J O O R R R R R V V   E E E E E E N                                                                                                                                                           
+F F S S W K K K T Z c c I I J J B B O O O R R R a V V E     N   N N                                                                                                                                                           
+C F F W W X Z T T Z c c I J J L L B B B O O H H a   V V N N N N N N                                                                                                                                                           
+C F F W W X Z Z Z Z Q Q J J L L L L L B O O   H a a M V V V V V                                                                                                                                                               
+C   W W X X Y Y Q Q Q Q J J   G G L L   b     H H a M     V V V V                                                                                                                                                             
+C C W   X X Y Y Q Q Q     J J G G b b b b b b b M M M M V V V                                                                                                                                                                 
+D C X X X X Y Y Q Q A A   J J J U U U U U U U U     M   V V                                                                                                                                                                   
+
+
+Population size:200
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 215.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 87.6
+
+Genoma: [2, 21, 7, 4, 28, 10, 26, 8, 20, 12, 5, 25, 6, 27, 18, 3, 14, 23, 9, 24, 11, 1, 17, 16, 22, 15, 0, 13, 19]
+
+Peças: [ C V H E c K a I U M F Z G b S D O X J Y L B R Q W P A N T ]
+
+Matriz: 
+C V V   E E E E E E S S M F F   O O R R R R R   J J P P P P Q Q W                                                                                                                                                             
+C D V V E I I G G a S S M F F Z Z O O O R R R J J     T Q Q Q Q W                                                                                                                                                             
+C H H V V I   G G a M M M M F F Z   X O O   J J L L T T Q Q Q W W                                                                                                                                                             
+C C H   V V V V V a a   M Z F F Z   X O O J J L L L L L Q Q   W W                                                                                                                                                             
+c C H H A A V V V V a b   Z Z Z Z X X Y Y J J B B   L L     W W N                                                                                                                                                             
+c c K K K V V V b b b b b b b     X X Y Y   J J B B B     N W N N                                                                                                                                                             
+c c K K K V V U U U U U U U U X X X X Y Y   J J J   B N N N N N N                                                                                                                                                             
+
+
+Population size:200
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 215.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 87.6
+
+Genoma: [2, 21, 7, 4, 28, 10, 26, 8, 20, 12, 5, 25, 6, 27, 18, 3, 14, 23, 9, 24, 11, 1, 17, 16, 22, 15, 0, 13, 19]
+
+Peças: [ C V H E c K a I U M F Z G b S D O X J Y L B R Q W P A N T ]
+
+Matriz: 
+C V V   E E E E E E S S M F F   O O R R R R R   J J P P P P Q Q W                                                                                                                                                             
+C D V V E I I G G a S S M F F Z Z O O O R R R J J     T Q Q Q Q W                                                                                                                                                             
+C H H V V I   G G a M M M M F F Z   X O O   J J L L T T Q Q Q W W                                                                                                                                                             
+C C H   V V V V V a a   M Z F F Z   X O O J J L L L L L Q Q   W W                                                                                                                                                             
+c C H H A A V V V V a b   Z Z Z Z X X Y Y J J B B   L L     W W N                                                                                                                                                             
+c c K K K V V V b b b b b b b     X X Y Y   J J B B B     N W N N                                                                                                                                                             
+c c K K K V V U U U U U U U U X X X X Y Y   J J J   B N N N N N N                                                                                                                                                             
+
+
+Population size:400
+Max generations:25
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 206.0
+
+TamanhoMaxPeça: 34.0
+
+Fitness: 85.6
+
+Genoma: [5, 25, 27, 16, 15, 11, 14, 10, 12, 9, 22, 21, 0, 2, 17, 4, 3, 13, 28, 26, 23, 1, 6, 20, 24, 7, 8, 18, 19]
+
+Peças: [ F Z b Q P L O K M J W V A C R E D N c a X B G U Y H I S T ]
+
+Matriz: 
+F F P P P P Q Q K K K M G G   J J W V V R R R R R E E E E E E H H                                                                                                                                                             
+F F Z Z Q Q Q Q K K K M G G J J   W C V V   R R R E a S S X Y Y H                                                                                                                                                             
+D F F Z Q Q Q B B M M M M J J   W W C   V V         a S S X Y Y H H                                                                                                                                                           
+Z F F Z Q Q O O B B B M J J I I W W C     V V V V V a a X X Y Y                                                                                                                                                               
+Z Z Z Z   L L O O O B c J J I W W T C C   N   V V V V a X X                                                                                                                                                                   
+A A   b L L L L L O O c c J J W T T N C N N V V V   X X X X                                                                                                                                                                   
+b b b b b b b L L O O c c J J J N N N N N N V V U U U U U U U U                                                                                                                                                               
+
+
+Population size:400
+Max generations:50
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 206.0
+
+TamanhoMaxPeça: 33.0
+
+Fitness: 84.89999999999999
+
+Genoma: [5, 25, 27, 16, 15, 11, 14, 10, 12, 9, 22, 21, 0, 2, 17, 4, 13, 28, 6, 8, 23, 20, 19, 3, 1, 7, 18, 24, 26]
+
+Peças: [ F Z b Q P L O K M J W V A C R E N c G I X U T D B H S Y a ]
+
+Matriz: 
+F F P P P P Q Q K K K M G G   J J W V V R R R R R E E E E E E Y Y                                                                                                                                                             
+F F Z Z Q Q Q Q K K K M G G J J   W C V V   R R R E S S X H H Y Y                                                                                                                                                             
+D F F Z Q Q Q B B M M M M J J   W W C   V V         S S X a H Y Y                                                                                                                                                             
+Z F F Z Q Q O O B B B M J J I I W W C     V V V V V   X X a H H                                                                                                                                                               
+Z Z Z Z   L L O O O B c J J I W W T C C   N   V V V V X X a a                                                                                                                                                                 
+A A   b L L L L L O O c c J J W T T N C N N V V V X X X X   a                                                                                                                                                                 
+b b b b b b b L L O O c c J J J N N N N N N V V U U U U U U U U                                                                                                                                                               
+
+
+Population size:400
+Max generations:100
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 205.0
+
+TamanhoMaxPeça: 32.0
+
+Fitness: 83.9
+
+Genoma: [5, 22, 27, 24, 25, 16, 9, 11, 14, 13, 21, 1, 28, 6, 23, 12, 4, 2, 3, 7, 17, 15, 20, 10, 18, 8, 19, 26, 0]
+
+Peças: [ F W b Y Z Q J L O N V B c G X M E C D H R P U K S I T a A ]
+
+Matriz: 
+F F G G W Y Y P P P P Q Q   J J   V V B B A A I I M E E E E E E                                                                                                                                                               
+F F G G W Y Y Z Z Q Q Q Q J J O O   V V B B B I   M E X C K K K                                                                                                                                                               
+D F F W W Y Y T Z Q Q Q J J L L O O O V V   B M M M M X C K K K                                                                                                                                                               
+c F F W W Z T T Z Q Q J J L L L L L O O V V V V V M X X C   a                                                                                                                                                                 
+c c W W   Z Z Z Z H H J J   S S L L O O N   V V V V X X C C a                                                                                                                                                                 
+c c W b   R R R R R H   J J S S   N   N N V V V X X X X   C a a                                                                                                                                                               
+b b b b b b b R R R H H J J J N N N N N N V V U U U U U U U U a                                                                                                                                                               
+
+
+Population size:400
+Max generations:200
+Selection:Tournament(5)
+Recombination:Order recombination (0.6)
+Recombination prob.: 0.6
+Mutation:Swap mutation (0.3)
+Mutation prob.: 0.3
+
+NºCortes: 204.0
+
+TamanhoMaxPeça: 32.0
+
+Fitness: 83.6
+
+Genoma: [5, 22, 27, 24, 25, 16, 9, 11, 14, 13, 21, 1, 28, 6, 23, 12, 4, 2, 3, 7, 17, 15, 20, 8, 18, 10, 19, 26, 0]
+
+Peças: [ F W b Y Z Q J L O N V B c G X M E C D H R P U I S K T a A ]
+
+Matriz: 
+F F G G W Y Y P P P P Q Q   J J   V V B B     S S M E E E E E E                                                                                                                                                               
+F F G G W Y Y Z Z Q Q Q Q J J O O   V V B B B S S M E X C K K K                                                                                                                                                               
+D F F W W Y Y T Z Q Q Q J J L L O O O V V   B M M M M X C K K K                                                                                                                                                               
+c F F W W Z T T Z Q Q J J L L L L L O O V V V V V M X X C   a                                                                                                                                                                 
+c c W W   Z Z Z Z H H J J   I I L L O O N   V V V V X X C C a                                                                                                                                                                 
+c c W b   R R R R R H   J J I A A N   N N V V V X X X X   C a a                                                                                                                                                               
+b b b b b b b R R R H H J J J N N N N N N V V U U U U U U U U a                                                                                                                                                               

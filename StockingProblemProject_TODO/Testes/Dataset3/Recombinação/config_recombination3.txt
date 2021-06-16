@@ -18,9 +18,9 @@ Recombination_probability: 0.4, 0.6, 0.8
 
 //--------------------------------
 
-Mutation: inversion
+Mutation: swap
 
-Mutation_probability: 0.2
+Mutation_probability: 0.3
 
 //--------------------------------
 
