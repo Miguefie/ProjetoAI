@@ -40,8 +40,8 @@ public class MutationScramble<I extends IntVectorIndividual, P extends Problem<I
             int aux = ind.getGene(j1);
 
             //trocamos o elemento do j1 com o elemento do j2
-            ind.setGene(ind.getGene(j1),ind.getGene(j2));
-            ind.setGene(ind.getGene(j2),aux);
+            ind.setGene(j1,ind.getGene(j2));
+            ind.setGene(j2,aux);
         }
     }
 
