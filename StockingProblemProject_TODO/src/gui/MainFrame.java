@@ -567,6 +567,9 @@ class PanelParameters extends PanelAtributesValue {
                 return new Mutation2<>(mutationProb);
             case 2:
                 return new Mutation3<>(mutationProb);
+            //TODO
+            case 3:
+                return new MutationScramble<>(mutationProb);
         }
         return null;
     }
