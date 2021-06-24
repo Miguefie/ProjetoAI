@@ -44,7 +44,8 @@ public class Recombination2<I extends IntVectorIndividual, P extends Problem<I>>
         crossOver(child1,ind1,ind2);
         crossOver(child2,ind2,ind1); //na criação do child2 os papeis do ind1 e ind2 estão invertidos
 
-        //temos de substitiur arrays aux (child 1 e 2) pelo array do individuo
+        //temos de substitiur os arrays do individuo pelos arrays aux (child 1 e 2)
+        //uma vez que, os filhos vão ser os novos pais
         for (int i = 0; i < ind1.getNumGenes(); i++) {
             ind1.setGene(i, child1[i]);
             ind2.setGene(i, child2[i]);
