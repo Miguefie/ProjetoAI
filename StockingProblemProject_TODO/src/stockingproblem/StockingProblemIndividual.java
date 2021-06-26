@@ -61,18 +61,18 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
         double nCutsPeso = 0;
         double tamMaxPecPeso = 0;
 
-        for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para ver em q parte da matrix encaixa peça
+        for (int k = 0; k < genome.length; k++) { //1º percorre genoma, para saber que peça é que vai add à matriz
 
             adicionado = false;
 
-            for (int j = 0; j < problem.getMaterialLength(); j++) { //2º percorre colunas (quero colucar peça o mais a cima e à esquerda possível)
+            for (int j = 0; j < problem.getMaterialLength(); j++) { //2º percorre colunas (quero colocar peça o mais acima e à esquerda possível)
                 for (int i = 0; i < problem.getMaterialHeight(); i++) { //3º percorre linhas
 
                     Item itemAtual = problem.getItems().get(genome[k]); //onde está o item
 
-                    if (checkValidPlacement(itemAtual, i, j)) {
+                    if (checkValidPlacement(itemAtual, i, j)) { //4º para ver em q parte da matrix encaixa peça
 
-                        placement(itemAtual, i, j); //método aux para add item
+                        placement(itemAtual, i, j); //5º método aux para add item e calcular tamMaxPec
 
                         adicionado = true;
 
@@ -106,11 +106,7 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
             }
         }
 
-/*        System.out.println("\n");
-        System.out.println("nCuts1 " + nCuts);
-        System.out.println("tamMaxPec1 " + tamMaxPec);*/
-
-        tamMaxPec++;
+        tamMaxPec++; //porque as colunas são iniciadas a 0
 
         //nCuts e tamMaxPec não podem ter o mesmo peso:
         nCutsPeso = nCuts * percNCuts; //nCutsPeso = nCuts * 0.3;
@@ -135,9 +131,11 @@ public class StockingProblemIndividual extends IntVectorIndividual<StockingProbl
 
                     material[lineIndex+i][columIndex+j] = item.getRepresentation(); //Colocar peça!!!
 
-                    if (tamMaxPec<columIndex+j){
+                    //calculado o tamMaxPec
+                    if (tamMaxPec < columIndex+j){ //columIndex+j -> é a coluna onde estou a colocar a peça
 
-                        tamMaxPec=columIndex+j;
+                        //quero saber o nº de colunas total que estou a usar para colocar o material
+                        tamMaxPec = columIndex+j;
                     }
                 }
             }
